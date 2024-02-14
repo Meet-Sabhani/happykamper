@@ -6,6 +6,8 @@ export const NavbarStyle = styled.div`
   align-items: center;
   padding: 24px 7%;
   border-bottom: 1px solid #eee;
+  max-width: 1800px;
+  position: relative;
 
   .nav-left {
     display: flex;
@@ -62,6 +64,82 @@ export const NavbarStyle = styled.div`
 
       &:active {
         scale: 0.9;
+      }
+    }
+  }
+
+  .reslogo,
+  .menu {
+    display: none;
+  }
+
+  @media (max-width: 992px) {
+    .reslogo {
+      display: block;
+      img {
+        width: 100px;
+        height: 50px;
+      }
+    }
+
+    .nav-left {
+      display: none;
+    }
+
+    .showMenu {
+      display: flex;
+
+      gap: 10px;
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 0 59px;
+        gap: 10px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 9;
+        li {
+          a {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      select {
+        display: none;
+      }
+      .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        .menu-line {
+          height: 5px;
+          width: 34px;
+          background-color: #000;
+          transition: 0.5s;
+        }
+      }
+      .openMenu {
+        transition: 0.5s;
+        .menu-line {
+          &:nth-child(1) {
+            transform: rotate(45deg) translate(3px, 3px);
+          }
+          &:nth-child(2) {
+            transform: rotate(-45deg) translate(3px, -3px);
+          }
+          &:nth-child(3) {
+            display: none;
+          }
+        }
       }
     }
   }

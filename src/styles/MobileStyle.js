@@ -5,6 +5,7 @@ export const MobileStyle = styled.div`
   height: 450px;
   width: 100%;
   overflow: hidden;
+  max-width: 1800px;
 
   img {
     width: 200px;
@@ -19,13 +20,13 @@ export const MobileStyle = styled.div`
     &:nth-child(2) {
       position: absolute;
       bottom: -100px;
-      left: 180px;
+      left: 15%;
       z-index: 3;
     }
     &:nth-child(3) {
       position: absolute;
       bottom: -70px;
-      left: 370px;
+      left: 30%;
       z-index: 4;
     }
     &:nth-child(4) {
@@ -37,13 +38,13 @@ export const MobileStyle = styled.div`
     }
     &:nth-child(5) {
       position: absolute;
-      right: 370px;
+      right: 30%;
       bottom: -70px;
       z-index: 4;
     }
     &:nth-child(6) {
       position: absolute;
-      right: 180px;
+      right: 15%;
       z-index: 3;
       bottom: -100px;
     }

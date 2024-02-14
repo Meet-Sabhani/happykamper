@@ -2,7 +2,7 @@ import React from "react";
 import { GlobalStyles } from "./styles/GlobalStyle";
 import { Navbar } from "./components/navbar/Navbar";
 import { Home } from "./components/home/Home";
-import { Mobils } from "./components/home/Mobils";
+import { Discover } from "./components/discover/Discover";
 
 export const App = () => {
   return (
@@ -10,7 +10,7 @@ export const App = () => {
       <GlobalStyles />
       <Navbar />
       <Home />
-      <Mobils />
+      <Discover />
     </>
   );
 };
