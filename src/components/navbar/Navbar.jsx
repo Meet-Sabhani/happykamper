@@ -6,12 +6,15 @@ export const Navbar = () => {
   return (
     <NavbarStyle>
       <div className="nav-left">
-        <div className="logo">
-          <img src={logoImg} alt="" />
-        </div>
         <ul>
           <li>
-            <a href="">home</a>
+            <a href="">
+              {" "}
+              <img src={logoImg} alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="">Home</a>
           </li>
           <li>
             <a href="">Parent</a>
@@ -32,7 +35,7 @@ export const Navbar = () => {
           <option value="ENGLISH">ENGLISH</option>
           <option value="GUJARATI">GUJARATI</option>
         </select>
-        <a href="">Download App</a>
+        <a>Download App</a>
       </div>
     </NavbarStyle>
   );
