@@ -4,7 +4,7 @@ export const NavbarStyle = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 7%;
+  padding: 24px 6%;
   border-bottom: 1px solid #eee;
   max-width: 1800px;
   position: relative;
@@ -16,7 +16,7 @@ export const NavbarStyle = styled.div`
     ul {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 20px;
 
       li {
         list-style: none;
@@ -51,11 +51,13 @@ export const NavbarStyle = styled.div`
       color: #5e5e5e;
       font-size: 18px;
       border: none;
+      font-weight: 600;
     }
     a {
       border: none;
       padding: 10px 20px;
       font-size: 1.3rem;
+      font-weight: bold;
       background-color: #fd0ea0;
       color: white;
       border-radius: 10px;

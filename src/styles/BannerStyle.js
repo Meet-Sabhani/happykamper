@@ -32,5 +32,12 @@ export const BannerStyle = styled.div`
   }
 
   @media (max-width: 630px) {
+    h2 {
+      text-align: center;
+    }
+    .logos {
+      gap: 20px;
+      justify-content: center;
+    }
   }
 `;

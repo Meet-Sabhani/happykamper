@@ -6,37 +6,39 @@ export const DiscoverStyle = styled.div`
   align-items: center;
   max-width: 749px;
   margin: 0 auto;
-  padding: 5% 0;
+  padding: 5% 10%;
   .mobile-circal {
     display: flex;
+    justify-content: center;
     position: relative;
-    height: 500px;
-    width: 635px;
+    height: 400px;
+    width: 535px;
     overflow: hidden;
     border-bottom: 1px solid #000;
 
     img {
-      width: 265.59px;
-      height: 516.75px;
+      width: 260px;
+      height: 416.75px;
+      object-fit: contain;
       position: relative;
 
       &:nth-child(1) {
         position: absolute;
         transform: rotate(-2deg);
-        left: 10%;
-        bottom: -10%;
+        left: 8%;
+        bottom: -60px;
       }
       &:nth-child(2) {
         position: absolute;
         transform: rotate(2deg);
-        bottom: -10%;
-        right: 10%;
+        bottom: -70px;
+        right: 8%;
       }
     }
-    &::after {
+    &::before {
       content: "";
-      width: 635px;
-      height: 635px;
+      width: 500px;
+      height: 500px;
       background-color: #1a2c68;
       position: absolute;
       border-radius: 50%;
@@ -44,9 +46,27 @@ export const DiscoverStyle = styled.div`
       top: 0;
     }
   }
+
+  @media (max-width: 600px) {
+    .mobile-circal {
+      width: 90%;
+
+      img {
+        height: 100%;
+        width: 50%;
+      }
+
+      &::before {
+        width: 100%;
+        height: 90%;
+      }
+    }
+  }
+
   .mini-art-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
     padding: 3%;
     .art {
@@ -77,5 +97,7 @@ export const DiscoverStyle = styled.div`
     p {
       text-align: center;
     }
+  }
+  @media (max-width: 600px) {
   }
 `;

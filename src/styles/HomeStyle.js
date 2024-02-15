@@ -4,6 +4,7 @@ export const HomeStyle = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 3%;
 
   .logo {
     width: 194px;
@@ -24,6 +25,7 @@ export const HomeStyle = styled.div`
     h1 {
       font-size: 50px;
       line-height: 54px;
+      text-align: center;
     }
   }
   .circal {
@@ -57,7 +59,7 @@ export const HomeStyle = styled.div`
       }
       span {
         color: #fd0ea0;
-        animation: downloadOpicy infinite 2s;
+        /* animation: downloadOpicy infinite 2s; */
         rotate: -6deg;
 
         @keyframes downloadOpicy {
