@@ -59,7 +59,7 @@ export const HomeStyle = styled.div`
       }
       span {
         color: #fd0ea0;
-        /* animation: downloadOpicy infinite 2s; */
+        animation: downloadOpicy infinite 2s;
         rotate: -6deg;
 
         @keyframes downloadOpicy {
