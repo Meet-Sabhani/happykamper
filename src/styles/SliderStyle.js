@@ -1,17 +1,13 @@
 import styled from "styled-components";
 
 export const SliderStyle = styled.div`
-  .sliderWrapper {
-    display: flex;
-    gap: 5vw;
-    overflow-x: scroll;
-    height: 100vh;
-    width: 80%;
-    margin: 0 auto;
-  }
+  display: flex;
+  gap: 5vw;
+
+  margin: 0 auto;
   .slider-dPink {
-    width: 100vw;
-    height: 90%;
+    width: 90%;
+    height: 100vh;
     border-radius: 30px;
     max-width: 1400px;
     margin: 0 auto;
@@ -64,6 +60,7 @@ export const SliderStyle = styled.div`
       bottom: 0;
     }
   }
+
   @media (max-width: 750px) {
     .slider-dPink {
       flex-direction: column;

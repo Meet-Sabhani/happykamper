@@ -59,25 +59,15 @@ export const HomeStyle = styled.div`
       }
       span {
         color: #fd0ea0;
-        animation: downloadOpicy infinite 2s;
+        animation: downloadOpacity infinite 2s;
         rotate: -6deg;
+        font-weight: bold;
+        font-size: 14px;
 
-        @keyframes downloadOpicy {
+        @keyframes downloadOpacity {
           0% {
             opacity: 0;
           }
-          25% {
-            opacity: 0.25;
-          }
-
-          50% {
-            opacity: 0.5;
-          }
-
-          75% {
-            opacity: 0.75;
-          }
-
           100% {
             opacity: 1;
           }

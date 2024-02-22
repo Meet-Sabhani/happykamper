@@ -1,6 +1,7 @@
 import React from "react";
 import { ActivityStyle } from "../../styles/ActivityStyle";
 import { Slider } from "./Slider";
+import { Carousels } from "./Carousels";
 
 export const Activity = () => {
   return (
@@ -15,7 +16,8 @@ export const Activity = () => {
           <p>Increase exposure and additional drive bookings</p>
         </div>
       </div>
-      <Slider />
+      {/* <Slider /> */}
+      <Carousels />
     </ActivityStyle>
   );
 };
