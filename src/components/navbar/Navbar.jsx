@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { NavbarStyle } from "../../styles/NavbarStyle";
 import logoImg from "../../images/HeaderLogo.webp";
 import LogoRes from "../../images/LogoRes.webp";
+import { Form, Select } from "antd";
+import { Option } from "antd/es/mentions";
 
 export const Navbar = () => {
   const [isMenuVisible, setMenuVisible] = useState(false);
@@ -46,10 +48,11 @@ export const Navbar = () => {
         </ul>
       </div>
       <div className="nav-right">
-        <select name="" id="">
-          <option value="ENGLISH">ENGLISH</option>
-          <option value="GUJARATI">GUJARATI</option>
-        </select>
+        <Select defaultValue={"english"}>
+          <Option value="english">English</Option>
+          <Option value="Gujarati">Gujarati</Option>
+        </Select>
+
         <a>Download App</a>
         <div
           className={`menu ${isMenuVisible ? "openMenu" : ""}`}
