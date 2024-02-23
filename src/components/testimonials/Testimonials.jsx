@@ -1,9 +1,16 @@
 import React from "react";
 import avtar from "../../images/Avatar.webp";
+import { TestimonialsStyle } from "../../styles/TestimonialsStyle";
+import { DownloadNow } from "../download/DownloadNow";
 
 export const Testimonials = () => {
+  const avatars = [];
+
+  for (let index = 0; index <= 26; index++) {
+    avatars.push(<img src={avtar} key={index} alt="" />);
+  }
   return (
-    <div>
+    <TestimonialsStyle>
       <h1>Let’s hear what they say about us</h1>
       <div className="review">
         <h1>
@@ -14,9 +21,14 @@ export const Testimonials = () => {
         <h2>Margareth</h2>
         <p>
           Yoga Teacher & a Full-Time Mom
-          <span>Mampang Prapatan, Jakarta Selatan</span>
+          <div>Mampang Prapatan, Jakarta Selatan</div>
         </p>
       </div>
-    </div>
+      <div className="TestimonialBottom">
+        <h2>- Join our happy customers -</h2>
+        <div className="avatarsWrap">{avatars}</div>
+        <DownloadNow> Download Happykamper now</DownloadNow>
+      </div>
+    </TestimonialsStyle>
   );
 };

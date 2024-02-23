@@ -5,6 +5,8 @@ import { Home } from "./components/home/Home";
 import { Discover } from "./components/discover/Discover";
 import { Activity } from "./components/activity/Activity";
 import { Safety } from "./components/safety/Safety";
+import { Testimonials } from "./components/testimonials/Testimonials";
+import { Questions } from "./components/questions/Questions";
 
 export const App = () => {
   return (
@@ -15,6 +17,8 @@ export const App = () => {
       <Discover />
       <Activity />
       <Safety />
+      <Testimonials />
+      <Questions />
     </>
   );
 };

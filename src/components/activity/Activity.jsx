@@ -15,8 +15,7 @@ export const Activity = () => {
           <p>Increase exposure and additional drive bookings</p>
         </div>
       </div>
-      {/* <Slider /> */}
-      <Carousels />
+      d <Carousels />
     </ActivityStyle>
   );
 };
