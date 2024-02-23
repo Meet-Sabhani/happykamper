@@ -7,6 +7,9 @@ import { Activity } from "./components/activity/Activity";
 import { Safety } from "./components/safety/Safety";
 import { Testimonials } from "./components/testimonials/Testimonials";
 import { Questions } from "./components/questions/Questions";
+import { Contact } from "./components/contact/Contact";
+import { Adventure } from "./components/adventure/Advanture";
+import { Footers } from "./components/footer/Footer";
 
 export const App = () => {
   return (
@@ -19,6 +22,9 @@ export const App = () => {
       <Safety />
       <Testimonials />
       <Questions />
+      <Contact />
+      <Adventure />
+      <Footers />
     </>
   );
 };
