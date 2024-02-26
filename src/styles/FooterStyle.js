@@ -4,6 +4,9 @@ export const FooterStyle = styled.div`
   background-color: #1a2c68;
   color: #fff;
   padding: 40px 8%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 
   .footer-top-container {
     display: flex;
