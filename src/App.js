@@ -10,6 +10,7 @@ import { Questions } from "./components/questions/Questions";
 import { Contact } from "./components/contact/Contact";
 import { Adventure } from "./components/adventure/Advanture";
 import { Footers } from "./components/footer/Footer";
+import { BannerLayers } from "./components/home/BannerLayers";
 
 export const App = () => {
   return (
@@ -17,6 +18,7 @@ export const App = () => {
       <GlobalStyles />
       <Navbar />
       <Home />
+      <BannerLayers />
       <Discover />
       <Activity />
       <Safety />

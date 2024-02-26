@@ -1,5 +1,5 @@
 import React from "react";
-import layarLogo from "../../images/layesr-logo.webp";
+import layerLogo from "../../images/layesr-logo.webp";
 import mickyLogo from "../../images/micky-mouse.webp";
 import { BannerStyle } from "../../styles/BannerStyle";
 
@@ -8,7 +8,7 @@ export const BannerLayers = () => {
     <BannerStyle>
       <h2>OUR LEADING ORGANIZATIONS PARTNERS</h2>
       <div className="logos">
-        <img src={layarLogo} alt="" />
+        <img src={layerLogo} alt="" />
         <img src={mickyLogo} alt="" />
       </div>
     </BannerStyle>

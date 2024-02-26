@@ -6,7 +6,8 @@ export const DiscoverStyle = styled.div`
   align-items: center;
   max-width: 749px;
   margin: 0 auto;
-  padding: 5% 10%;
+  padding: 5% 0;
+
   .mobile-circal {
     display: flex;
     justify-content: center;
@@ -47,18 +48,19 @@ export const DiscoverStyle = styled.div`
     }
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
+    padding: 5% 10%;
+
     .mobile-circal {
-      width: 90%;
-
+      height: 180px;
+      max-width: 248px;
       img {
-        height: 100%;
-        width: 50%;
+        width: 114.35px;
+        height: 222.87px;
       }
-
       &::before {
-        width: 100%;
-        height: 90%;
+        height: 248px;
+        width: 248px;
       }
     }
   }
@@ -68,7 +70,7 @@ export const DiscoverStyle = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    padding: 3%;
+    padding: 3% 0;
     .art {
       display: flex;
       flex-direction: column;

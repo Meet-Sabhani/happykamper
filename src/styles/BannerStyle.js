@@ -38,6 +38,11 @@ export const BannerStyle = styled.div`
     .logos {
       gap: 20px;
       justify-content: center;
+      img {
+        &:nth-child(2) {
+          display: none;
+        }
+      }
     }
   }
 `;

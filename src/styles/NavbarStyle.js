@@ -88,6 +88,12 @@ export const NavbarStyle = styled.div`
       display: none;
     }
 
+    .nav-right {
+      .ant-select-selector {
+        display: none;
+      }
+    }
+
     .showMenu {
       display: flex;
 

@@ -48,12 +48,12 @@ export const Navbar = () => {
         </ul>
       </div>
       <div className="nav-right">
-        <Select defaultValue={"english"}>
+        <Select defaultValue={"english"} style={{ border: "none" }}>
           <Option value="english">English</Option>
           <Option value="Gujarati">Gujarati</Option>
         </Select>
 
-        <a>Download App</a>
+        <a href="#">Download App</a>
         <div
           className={`menu ${isMenuVisible ? "openMenu" : ""}`}
           onClick={toggleMenu}

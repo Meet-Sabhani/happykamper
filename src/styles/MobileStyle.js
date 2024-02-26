@@ -20,13 +20,13 @@ export const MobileStyle = styled.div`
     &:nth-child(2) {
       position: absolute;
       bottom: -100px;
-      left: 15%;
+      left: 14%;
       z-index: 3;
     }
     &:nth-child(3) {
       position: absolute;
       bottom: -70px;
-      left: 30%;
+      left: 28%;
       z-index: 4;
     }
     &:nth-child(4) {
@@ -38,13 +38,13 @@ export const MobileStyle = styled.div`
     }
     &:nth-child(5) {
       position: absolute;
-      right: 30%;
+      right: 28%;
       bottom: -70px;
       z-index: 4;
     }
     &:nth-child(6) {
       position: absolute;
-      right: 15%;
+      right: 14%;
       z-index: 3;
       bottom: -100px;
     }
@@ -52,6 +52,33 @@ export const MobileStyle = styled.div`
       position: absolute;
       bottom: -130px;
       right: 2px;
+    }
+  }
+  @media (max-width: 768px) {
+    height: 314px;
+
+    img {
+      width: 148px;
+      height: 303px;
+      &:nth-child(2) {
+        left: 10%;
+        rotate: -1deg;
+      }
+      &:nth-child(3) {
+        left: 20%;
+        rotate: -2deg;
+      }
+      &:nth-child(4) {
+        top: 66%;
+      }
+      &:nth-child(5) {
+        right: 20%;
+        rotate: 2deg;
+      }
+      &:nth-child(6) {
+        right: 10%;
+        rotate: 1deg;
+      }
     }
   }
 `;

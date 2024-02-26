@@ -12,13 +12,14 @@ export const HomeStyle = styled.div`
     img {
       height: 100%;
       width: 100%;
-      object-fit: cover;
+      object-fit: contain;
     }
   }
 
   .center {
     display: flex;
     flex-direction: column;
+    padding: 10px 10%;
     gap: 24px;
     align-items: center;
 
@@ -37,8 +38,8 @@ export const HomeStyle = styled.div`
     overflow: hidden;
 
     &::after {
-      position: absolute;
       content: "";
+      position: absolute;
       height: 1000px;
       width: 1000px;
       background-color: #f1f4ff;
@@ -72,6 +73,20 @@ export const HomeStyle = styled.div`
             opacity: 1;
           }
         }
+      }
+    }
+  }
+  @media (max-width: 650px) {
+    .logo {
+      width: 154px;
+      height: 70px;
+    }
+    .center {
+      gap: 10px;
+
+      h1 {
+        font-size: 24px;
+        line-height: 1.5;
       }
     }
   }

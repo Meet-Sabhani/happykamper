@@ -66,10 +66,28 @@ export const SliderStyle = styled.div`
       flex-direction: column;
       height: auto;
       width: 90%;
+      padding: 5%;
     }
     .slider-left {
-      /* width: 100%; */
-      /* max-width: a; */
+      height: 248px;
+      width: 248px;
+
+      img {
+        height: 248px;
+        width: 248px;
+        &:nth-child(1) {
+          position: absolute;
+          top: 0px;
+          left: 42px;
+          transform: rotate(3deg);
+        }
+        &:nth-child(2) {
+          position: absolute;
+          top: 10px;
+          right: 42px;
+          transform: rotate(-3deg);
+        }
+      }
     }
     .slider-right {
       width: 100%;
