@@ -99,6 +99,17 @@ export const AdventureStyle = styled.div`
         border-radius: 12px;
       }
     }
+    .SecSlider-container {
+      .SecSlider {
+        img {
+          min-width: 204px;
+          width: 204px;
+          min-height: 174px;
+          height: 174px;
+          border-radius: 12px;
+        }
+      }
+    }
   }
   @media (max-width: 600px) {
     margin-bottom: 30%;
@@ -109,6 +120,17 @@ export const AdventureStyle = styled.div`
         min-height: 124px;
         height: 124px;
         border-radius: 12px;
+      }
+    }
+    .SecSlider-container {
+      .SecSlider {
+        img {
+          min-width: 164px;
+          width: 164px;
+          min-height: 124px;
+          height: 124px;
+          border-radius: 12px;
+        }
       }
     }
     .adventureBox {
