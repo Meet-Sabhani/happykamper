@@ -28,7 +28,7 @@ export const Contact = () => {
   );
 
   return (
-    <ContactStyle>
+    <ContactStyle id="contact">
       <Row
         gutter={{
           xs: 8,

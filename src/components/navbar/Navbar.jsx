@@ -26,24 +26,24 @@ export const Navbar = () => {
       <div className={`nav-left ${isMenuVisible ? "showMenu" : ""}`}>
         <ul style={menuStyles}>
           <li>
-            <a href="">
+            <a href="/">
               <img src={logoImg} alt="" />
             </a>
           </li>
           <li>
-            <a href="">Home</a>
+            <a href="/">Home</a>
           </li>
           <li>
-            <a href="">Parent</a>
+            <a href="/">Parent</a>
           </li>
           <li>
-            <a href="">Provider</a>
+            <a href="/">Provider</a>
           </li>
           <li>
-            <a href="">Why Us</a>
+            <a href="#safety">Why Us</a>
           </li>
           <li>
-            <a href="">Contact Us</a>
+            <a href="#contact">Contact Us</a>
           </li>
         </ul>
       </div>

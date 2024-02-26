@@ -5,9 +5,20 @@ export const AdventureStyle = styled.div`
   height: max-content;
   padding: 50px 0;
   margin-bottom: 10%;
+  .sliders-container {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .fSlider-container {
+    display: flex;
+    overflow: hidden;
+    gap: 20px;
+  }
   .fSlider {
     display: flex;
     gap: 20px;
+    animation: slide 6s infinite linear;
     img {
       position: relative;
       min-width: 424px;
@@ -16,6 +27,44 @@ export const AdventureStyle = styled.div`
       height: 320px;
       border-radius: 20px;
       object-fit: cover;
+    }
+  }
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  .SecSlider-container {
+    display: flex;
+    overflow: hidden;
+    gap: 20px;
+
+    .SecSlider {
+      display: flex;
+      gap: 20px;
+      animation: slideSen 6s infinite linear;
+      img {
+        position: relative;
+        min-width: 424px;
+        width: 424px;
+        min-height: 320px;
+        height: 320px;
+        border-radius: 20px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  @keyframes slideSen {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
     }
   }
 

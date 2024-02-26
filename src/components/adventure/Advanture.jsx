@@ -10,24 +10,40 @@ import { DownloadNow } from "../download/DownloadNow";
 export const Adventure = () => {
   return (
     <AdventureStyle>
-      <marquee>
-        <div className="fSlider">
-          <img src={s1} alt="" />
-          <img src={s2} alt="" />
-          <img src={s3} alt="" />
-          <img src={s4} alt="" />
-          <img src={s5} alt="" />
+      <div className="sliders-container">
+        <div className="fSlider-container">
+          <div className="fSlider">
+            <img src={s1} alt="" />
+            <img src={s2} alt="" />
+            <img src={s3} alt="" />
+            <img src={s4} alt="" />
+            <img src={s5} alt="" />
+          </div>
+          <div className="fSlider">
+            <img src={s1} alt="" />
+            <img src={s2} alt="" />
+            <img src={s3} alt="" />
+            <img src={s4} alt="" />
+            <img src={s5} alt="" />
+          </div>
         </div>
-      </marquee>
-      <marquee direction="right">
-        <div className="fSlider">
-          <img src={s3} alt="" />
-          <img src={s4} alt="" />
-          <img src={s5} alt="" />
-          <img src={s2} alt="" />
-          <img src={s1} alt="" />
+        <div className="SecSlider-container">
+          <div className="SecSlider">
+            <img src={s3} alt="" />
+            <img src={s2} alt="" />
+            <img src={s4} alt="" />
+            <img src={s5} alt="" />
+            <img src={s1} alt="" />
+          </div>
+          <div className="SecSlider">
+            <img src={s3} alt="" />
+            <img src={s1} alt="" />
+            <img src={s5} alt="" />
+            <img src={s4} alt="" />
+            <img src={s2} alt="" />
+          </div>
         </div>
-      </marquee>
+      </div>
 
       <div className="adventureBox">
         <h1>Join the adventure now!</h1>
