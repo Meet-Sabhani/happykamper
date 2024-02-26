@@ -27,12 +27,32 @@ export const ProffionalStyle = styled.div`
   @media (max-width: 992px) {
     flex-direction: column;
     padding: 10px 0;
+    gap: 10px;
+    .proffional {
+      width: 100%;
+      padding: 20px;
+
+      .proffionalTop {
+        gap: 8px;
+        img {
+          width: 50px;
+        }
+        h1 {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+  @media (max-width: 768px) {
     .proffional {
       width: 100%;
       .proffionalTop {
         h1 {
-          font-size: 32px;
+          font-size: 20px;
         }
+      }
+      p {
+        font-size: 14px;
       }
     }
   }

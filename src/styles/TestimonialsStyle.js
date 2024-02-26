@@ -4,7 +4,7 @@ export const TestimonialsStyle = styled.div`
   padding: 50px 10%;
   text-align: center;
   h1 {
-    padding: 20px;
+    padding: 20px 0;
   }
   .review {
     width: 100%;
@@ -20,6 +20,7 @@ export const TestimonialsStyle = styled.div`
     h1 {
       line-height: 1.3;
       font-size: 36px;
+      padding: unset;
     }
     img {
       width: 100px;
@@ -49,6 +50,29 @@ export const TestimonialsStyle = styled.div`
       img {
         width: 64px;
         height: 64px;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .TestimonialBottom {
+      padding: unset;
+      .avatarsWrap {
+        padding: 10px 0;
+        img {
+          width: 48px;
+          height: 48px;
+        }
+      }
+    }
+    .review {
+      gap: 15px;
+      img {
+        height: 48px;
+        width: 48px;
+      }
+      h1 {
+        font-size: 24px;
+        line-height: 1.1;
       }
     }
   }

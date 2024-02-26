@@ -55,12 +55,13 @@ export const SafetyStyle = styled.div`
   @media (max-width: 992px) {
     .cardWrap {
       background-color: transparent;
+      height: auto;
       .card {
         width: 100%;
         height: fit-content;
         .card-left {
           width: 100%;
-          padding: 38px;
+          padding: 20px;
         }
         .card-right {
           display: none;

@@ -2,56 +2,63 @@ import React from "react";
 import Header from "../../images/logo.svg";
 import { FooterStyle } from "../../styles/FooterStyle";
 import { Col, Divider, Flex, Row } from "antd";
+import gPay from "../../images/googleplay.webp";
+import apple from "../../images/applestore.webp";
 
 export const Footers = () => {
   return (
     <FooterStyle>
-      <Row
-        gutter={{
-          xs: 8,
-          sm: 16,
-          md: 24,
-          lg: 32,
-        }}
-        style={{ marginLeft: "unset", marginRight: "unset" }}
-      >
-        <Col xs={{ span: 24 }} md={{ span: 10 }}>
+      <div className="footer-top-container">
+        <div className="footer-left">
           <img src={Header} alt="" />
           <p>
             <a href="">support@happykamper.io</a>
-          </p>
-          <p>
             <a href="">+1 310-361-7923</a>
           </p>
-        </Col>
-        <Col xs={{ span: 24 }} md={{ span: 10 }}>
-          <Row>
-            <Col xs={{ span: 24 }} sm={{ span: 8 }}>
-              <h2>Support</h2>
+        </div>
+        <div className="footer-right-container">
+          <div className="footer-right-part">
+            <h2>Support</h2>
+            <div className="Help">
               <p>Help Center</p>
               <p>FAQs</p>
-            </Col>
-            <Col xs={{ span: 24 }} sm={{ span: 8 }}>
-              <h2>Follow</h2>
-            </Col>
-            <Col xs={{ span: 24 }} sm={{ span: 8 }}>
-              <h2>Download</h2>
-            </Col>
-          </Row>
-        </Col>
-      </Row>
+            </div>
+          </div>
+
+          <div className="footer-right-part">
+            <h2>Follow</h2>
+            <div className="icons">
+              <i class="fab fa-facebook-square"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+
+          <div className="footer-right-part">
+            <h2>Download</h2>
+            <div className="stores">
+              <img src={gPay} alt="" />
+              <img src={apple} alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
 
       <Divider style={{ background: "#505D8A" }} />
-      <Row>
-        <Col>Copyright © PT. Happy Kamper Indonesia</Col>
-        <Divider type="vertical" style={{ background: "#505D8A" }} />
-        <Col>
-          <Flex wrap="wrap" gap={7}>
-            <p>Terms & Conditions</p>
-            <p>Privacy Policy</p>
-          </Flex>
-        </Col>
-      </Row>
+      <div className="footer-bottom-container">
+        <p>Copyright © PT. Happy Kamper Indonesia</p>
+        <Divider
+          type="vertical"
+          style={{
+            background: "#505D8A",
+            height: "1.9em",
+          }}
+        />
+
+        <p>Terms & Conditions</p>
+        <p>Privacy Policy</p>
+      </div>
     </FooterStyle>
   );
 };

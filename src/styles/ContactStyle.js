@@ -18,4 +18,7 @@ export const ContactStyle = styled.div`
     padding: 20px;
     border-radius: 15px;
   }
+  @media (max-width: 768px) {
+    margin: 5vh auto;
+  }
 `;

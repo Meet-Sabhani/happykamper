@@ -33,4 +33,14 @@ export const QuestionsStyle = styled.div`
       }
     }
   }
+  @media (max-width: 600px) {
+    padding: 0 4%;
+    .CollapseWrap {
+      .ant-collapse-item {
+        .ant-collapse-header span {
+          font-size: 16px;
+        }
+      }
+    }
+  }
 `;
