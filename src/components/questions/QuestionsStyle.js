@@ -5,10 +5,13 @@ export const QuestionsStyle = styled.div`
   width: 80%;
   background-color: #d1fff8;
   border-radius: 20px;
-  padding: 80px 18.1%;
+  padding: 80px 16%;
+  max-width: 1800px;
+
 
   h1 {
     text-align: center;
+    font-size: 48px;
   }
 
   p {
@@ -16,7 +19,7 @@ export const QuestionsStyle = styled.div`
     font-size: 20px;
     line-height: 1.2;
     text-align: center;
-    color: #53615f;
+    color: #1a1a1a;
   }
 
   .CollapseWrap {
@@ -41,11 +44,16 @@ export const QuestionsStyle = styled.div`
     }
   }
   @media (max-width: 992px) {
-    width: 90%;
+    h1 {
+      font-size: 32px;
+      line-height: 40px;
+    }
+    width: 95%;
     padding: 80px 48px;
   }
   @media (max-width: 600px) {
     padding: 20px;
+
     p {
       font-size: 16px;
       line-height: 1.2;

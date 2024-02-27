@@ -5,11 +5,17 @@ export const BannerStyle = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3% 10%;
+  padding: 37px 0;
   background-color: #1a2c68;
   color: #fff;
-  gap: 16px;
+  gap: 12px;
   width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+
+  h2 {
+    font-size: 20px;
+  }
 
   .logos {
     display: flex;
@@ -18,16 +24,9 @@ export const BannerStyle = styled.div`
     gap: 100px;
 
     img {
-      &:nth-child(1) {
-        width: 150px;
-        height: 50px;
-        object-fit: cover;
-      }
-      &:nth-child(2) {
-        width: 200px;
-        height: 50px;
-        object-fit: cover;
-      }
+      width: 122px;
+      height: 40px;
+      object-fit: cover;
     }
   }
 

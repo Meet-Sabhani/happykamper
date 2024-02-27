@@ -8,11 +8,12 @@ export const NavbarStyle = styled.div`
   border-bottom: 1px solid #eee;
   max-width: 1800px;
   position: relative;
+  margin: 0 auto;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 9999;
+  z-index: 9;
   background-color: #fff;
 
   .nav-left {
@@ -151,10 +152,12 @@ export const NavbarStyle = styled.div`
       .menu {
         display: flex;
         flex-direction: column;
-        gap: 5px;
+        gap: 3px;
+        cursor: pointer;
         .menu-line {
-          height: 5px;
-          width: 34px;
+          height: 3px;
+          width: 25px;
+          border-radius: 3px;
           background-color: #000;
           transition: 0.5s;
         }

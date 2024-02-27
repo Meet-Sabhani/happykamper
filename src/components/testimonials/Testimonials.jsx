@@ -6,12 +6,14 @@ import { DownloadNow } from "../download/DownloadNow";
 export const Testimonials = () => {
   const avatars = [];
 
-  for (let index = 0; index <= 24; index++) {
+  for (let index = 0; index <= 26; index++) {
     avatars.push(<img src={avtar} key={index} alt="" />);
   }
   return (
     <TestimonialsStyle>
-      <h1>Let’s hear what they say about us</h1>
+      <div className="title">
+        <h1>Let’s hear what they say about us</h1>
+      </div>
       <div className="review">
         <h1>
           "Happy Kamper revolutionized how I find great activities for my child.
@@ -24,8 +26,8 @@ export const Testimonials = () => {
           <div>Mampang Prapatan, Jakarta Selatan</div>
         </p>
       </div>
+      <h2>- Join our happy customers -</h2>
       <div className="TestimonialBottom">
-        <h2>- Join our happy customers -</h2>
         <div className="avatarsWrap">{avatars}</div>
         <DownloadNow> Download Happykamper now</DownloadNow>
       </div>

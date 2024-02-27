@@ -49,7 +49,7 @@ export const DiscoverStyle = styled.div`
   }
 
   @media (max-width: 768px) {
-    padding: 5% 10%;
+    padding: 48px;
 
     .mobile-circal {
       height: 180px;
@@ -76,10 +76,19 @@ export const DiscoverStyle = styled.div`
       flex-direction: column;
       align-items: center;
       gap: 10px;
+
+      .img-wrap {
+        border-radius: 50%;
+        overflow: hidden;
+        height: 64px;
+        width: 64px;
+      }
       img {
         background-color: #f1f4ff;
+        object-fit: contain;
+        height: 100%;
+        width: 100%;
         padding: 15px;
-        border-radius: 50%;
       }
       h4 {
         color: #484848;
@@ -106,14 +115,10 @@ export const DiscoverStyle = styled.div`
       font-size: 20px;
     }
   }
+
   @media (max-width: 600px) {
-    .text-container {
-      h1 {
-        font-size: 36px;
-      }
-    }
-  }
-  @media (max-width: 600px) {
+    padding: 48px 20px;
+
     .text-container {
       h1 {
         font-size: 28px;

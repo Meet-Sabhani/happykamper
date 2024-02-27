@@ -9,7 +9,9 @@ export const Safety = () => {
   return (
     <>
       <SafetyStyle id="safety">
-        <h1>Your Children's Safety is Our #1 Priority</h1>
+        <div className="title">
+          <h1>Your Children's Safety is Our #1 Priority</h1>
+        </div>
         <div className="cardWrap">
           <div className="card">
             <div className="card-left">

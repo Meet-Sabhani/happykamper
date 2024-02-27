@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../../images/logo.svg";
 import { FooterStyle } from "../../styles/FooterStyle";
-import { Col, Divider, Flex, Row } from "antd";
+import { Divider, Space } from "antd";
 import gPay from "../../images/googleplay.webp";
 import apple from "../../images/applestore.webp";
 
@@ -28,10 +28,18 @@ export const Footers = () => {
           <div className="footer-right-part">
             <h2>Follow Us</h2>
             <div className="icons">
-              <i class="fa-brands fa-facebook-f"></i>
-              <i class="fab fa-twitter"></i>
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-brands fa-linkedin-in"></i>
+              <div className="icon-wrap">
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <div className="icon-wrap">
+                <i class="fab fa-twitter"></i>
+              </div>
+              <div className="icon-wrap">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div className="icon-wrap">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
             </div>
           </div>
 
@@ -46,18 +54,16 @@ export const Footers = () => {
       </div>
 
       <Divider style={{ background: "#505D8A" }} />
+
       <div className="footer-bottom-container">
         <p>Copyright © PT. Happy Kamper Indonesia</p>
-        <Divider
-          type="vertical"
-          style={{
-            background: "#fff",
-            height: "1.9em",
-          }}
-        />
-
-        <p>Terms & Conditions</p>
-        <p>Privacy Policy</p>
+        <Space>
+          <Divider type="vertical" />
+        </Space>
+        <div className="bottom-right">
+          <p>Terms & Conditions</p>
+          <p>Privacy Policy</p>
+        </div>
       </div>
     </FooterStyle>
   );

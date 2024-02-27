@@ -1,15 +1,25 @@
 import styled from "styled-components";
 
 export const TestimonialsStyle = styled.div`
-  padding: 50px 13%;
+  padding: 80px 160px;
   text-align: center;
-  h1 {
-    padding: 20px 0;
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  max-width: 1800px;
+  margin: 0 auto;
+
+  .title {
+    h1 {
+      font-size: 48px;
+      line-height: 1.2;
+      padding-bottom: 40px;
+    }
   }
   .review {
     width: 100%;
     background-color: #f5f6f8;
-    padding: 45px;
+    padding: 48px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,7 +30,6 @@ export const TestimonialsStyle = styled.div`
     h1 {
       line-height: 1.3;
       font-size: 48px;
-      padding: unset;
       color: #464647;
     }
     img {
@@ -35,21 +44,20 @@ export const TestimonialsStyle = styled.div`
       }
     }
   }
+  h2 {
+    color: #484848;
+    font-weight: normal;
+  }
   .TestimonialBottom {
-    padding: 25px;
-
-    h2 {
-      line-height: 1.3;
-      padding: 20px 0;
-      color: #484848;
-    }
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 
     .avatarsWrap {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 12px;
-      padding: 30px;
       img {
         width: 64px;
         height: 64px;
@@ -57,13 +65,25 @@ export const TestimonialsStyle = styled.div`
     }
   }
   @media (max-width: 992px) {
+    padding: 48px;
     .review {
       h1 {
-        font-size: 36px;
+        font-size: 32px;
       }
     }
   }
   @media (max-width: 768px) {
+    padding: 48px 20px;
+    gap: 24px;
+
+    .title {
+      h1 {
+        font-size: 32px;
+        line-height: 40px;
+        padding-bottom: unset;
+      }
+    }
+
     .TestimonialBottom {
       padding: unset;
       h2 {
@@ -71,7 +91,7 @@ export const TestimonialsStyle = styled.div`
         padding: 10px 0;
       }
       .avatarsWrap {
-        padding: 10px 0;
+        padding: unset;
         img {
           width: 48px;
           height: 48px;
@@ -80,6 +100,8 @@ export const TestimonialsStyle = styled.div`
     }
     .review {
       gap: 15px;
+      padding: 20px;
+      border-radius: 20px;
 
       img {
         height: 48px;
@@ -88,6 +110,14 @@ export const TestimonialsStyle = styled.div`
       h1 {
         font-size: 24px;
         line-height: 1.1;
+      }
+      h2 {
+        font-size: 18px;
+        line-height: 20px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 18px;
       }
     }
   }

@@ -30,35 +30,22 @@ export const Contact = () => {
 
   return (
     <ContactStyle id="contact">
-      <Row
-        gutter={{
-          xs: 8,
-          sm: 16,
-          md: 24,
-          lg: 32,
-        }}
-      >
-        <Col xs={{ span: 24 }} md={{ span: 12 }}>
+      <Row>
+        <Col xs={{ span: 24 }} md={{ span: 24 }} lg={{ span: 12 }}>
           <div className="Contact-left">
             <img src={contactImg} alt="" />
             <h1>Love to hear from you. Let’s get in touch!</h1>
           </div>
         </Col>
-        <Col xs={{ span: 24 }} md={{ span: 12 }}>
+        <Col xs={{ span: 24 }} md={{ span: 24 }} lg={{ span: 12 }}>
           <div className="Contact-right">
             <Form
               name="basic"
               labelCol={{
                 span: 24,
-                style: {
-                  fontWeight: "bold",
-                },
               }}
               wrapperCol={{
                 span: 24,
-              }}
-              style={{
-                maxWidth: 600,
               }}
               initialValues={{
                 remember: true,
@@ -71,17 +58,6 @@ export const Contact = () => {
                 <Input placeholder="Enter Your Full Name" />
               </Form.Item>
 
-              <Form.Item name="email" label="E-mail">
-                <Input placeholder="Examplw@gmail.com" />
-              </Form.Item>
-              <Form.Item name="select" label="How Can We Help You?">
-                <Select placeholder="Select Option" style={{ border: "unset" }}>
-                  <Option value="english">Business already Climed</Option>
-                  <Option value="Gujarati">Login issue</Option>
-                  <Option value="Gujarati">Class Registration</Option>
-                </Select>
-              </Form.Item>
-
               <Form.Item name="phone" label="Phone Number">
                 <Input
                   addonBefore={prefixSelector}
@@ -92,27 +68,23 @@ export const Contact = () => {
                 />
               </Form.Item>
 
+              <Form.Item name="email" label="Email Address">
+                <Input placeholder="Examplw@gmail.com" />
+              </Form.Item>
+              <Form.Item name="select" label="How can we help?">
+                <Select placeholder="Select Option" style={{ border: "unset" }}>
+                  <Option value="english">Business already Climed</Option>
+                  <Option value="Gujarati">Login issue</Option>
+                  <Option value="Gujarati">Class Registration</Option>
+                </Select>
+              </Form.Item>
+
               <Form.Item label="Tell us more">
                 <TextArea rows={2} placeholder="Describe more Detail" />
               </Form.Item>
 
               <Form.Item>
-                <Flex justify="center">
-                  <Button
-                    type="primary"
-                    style={{
-                      backgroundColor: "#1A2C68",
-                      fontWeight: "bold",
-                      color: "#fff",
-                      fontSize: "20px",
-                      width: "100%",
-                      height: "unset",
-                    }}
-                    htmlType="submit"
-                  >
-                    Submit Message
-                  </Button>
-                </Flex>
+                <Button htmlType="submit">Submit Message</Button>
               </Form.Item>
             </Form>
           </div>

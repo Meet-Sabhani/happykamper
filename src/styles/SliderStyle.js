@@ -112,8 +112,13 @@ export const SliderStyle = styled.div`
     }
     .slider-right {
       width: 100%;
+      gap: 15px;
       h1 {
         font-size: 30px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 20px;
       }
     }
   }

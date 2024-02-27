@@ -9,9 +9,12 @@ export const ProffionalStyle = styled.div`
   .proffional {
     width: 50%;
     background-color: #fd0ea0;
-    padding: 30px;
+    padding: 48px 40px;
     border-radius: 45px;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     .proffionalTop {
       display: flex;
       align-items: center;
@@ -22,13 +25,12 @@ export const ProffionalStyle = styled.div`
       }
       h1 {
         font-size: 48px;
-        text-align: unset;
-        padding: unset;
+        line-height: 0.9;
       }
     }
     p {
       font-size: 20px;
-      line-height: 1.2;
+      line-height: 28px;
     }
   }
   @media (max-width: 992px) {

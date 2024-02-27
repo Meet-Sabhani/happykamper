@@ -46,8 +46,10 @@ export const Adventure = () => {
       </div>
 
       <div className="adventureBox">
-        <h1>Join the adventure now!</h1>
-        <p>Explore activities tailored for your children.</p>
+        <div className="text-div">
+          <h1>Join the adventure now!</h1>
+          <p>Explore activities tailored for your children.</p>
+        </div>
         <DownloadNow>Download Happy kamper now</DownloadNow>
       </div>
     </AdventureStyle>

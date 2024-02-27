@@ -5,6 +5,8 @@ export const HomeStyle = styled.div`
   flex-direction: column;
   align-items: center;
   padding-top: 10%;
+  max-width: 1800px;
+  margin: 0 auto;
 
   .logo {
     width: 194px;
@@ -30,6 +32,11 @@ export const HomeStyle = styled.div`
       line-height: 54px;
       text-align: center;
     }
+    p {
+      font-size: 20px;
+      line-height: 28px;
+      color: #484848;
+    }
   }
   .circal {
     width: 100%;
@@ -37,6 +44,7 @@ export const HomeStyle = styled.div`
     align-items: center;
     flex-direction: column;
     position: relative;
+    height: 550px;
     overflow: hidden;
 
     &::after {

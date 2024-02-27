@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 export const ActivityStyle = styled.div`
+  max-width: 1800px;
+  margin: 0 auto;
+
   .activity-parents {
     display: flex;
     justify-content: space-between;
@@ -10,7 +13,6 @@ export const ActivityStyle = styled.div`
 
     .parent,
     .provider {
-      text-align: center;
       padding: 20px;
       width: 50%;
 
@@ -21,7 +23,7 @@ export const ActivityStyle = styled.div`
       }
       p {
         font-size: 16px;
-        line-height: 1.3;
+        line-height: 20px;
         color: rgb(26, 26, 26);
       }
     }
@@ -30,6 +32,23 @@ export const ActivityStyle = styled.div`
     }
     .provider {
       border-bottom: 4px solid #eee;
+    }
+  }
+  @media (max-width: 667px) {
+    .activity-parents {
+      width: 100%;
+      .parent,
+      .provider {
+        padding: unset;
+        h2 {
+          font-size: 16px;
+          line-height: 20px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
     }
   }
 `;

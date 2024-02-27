@@ -5,6 +5,9 @@ export const AdventureStyle = styled.div`
   height: max-content;
   padding: 50px 0;
   margin-bottom: 10%;
+  max-width: 1800px;
+  margin: 0 auto;
+
   .sliders-container {
     display: flex;
     gap: 20px;
@@ -72,26 +75,34 @@ export const AdventureStyle = styled.div`
   .adventureBox {
     background-color: #1a2c68;
     color: #fff;
-    padding: 40px 30px;
+    padding: 48px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    text-align: center;
     gap: 20px;
     width: 80%;
-    border-radius: 20px;
+    border-radius: 48px;
     margin: 0 auto;
     position: absolute;
     bottom: 0%;
     transform: translate(-50%, 30%);
     left: 50%;
 
-    h1 {
-      font-size: 48px;
-    }
-    p {
-      font-size: 20px;
-      line-height: 1.2;
+    .text-div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      h1 {
+        font-size: 48px;
+      }
+      p {
+        font-size: 20px;
+        line-height: 1.2;
+      }
     }
   }
   @media (max-width: 992px) {
@@ -119,15 +130,10 @@ export const AdventureStyle = styled.div`
     }
     .adventureBox {
       gap: 15px;
-      h1 {
-        font-size: 32px;
-      }
-      p {
-        font-size: 16px;
-      }
+      width: 90%;
     }
   }
-  @media (max-width: 600px) {
+  @media (max-width: 668px) {
     margin-bottom: 25%;
     .fSlider {
       img {
@@ -154,8 +160,18 @@ export const AdventureStyle = styled.div`
       padding: 20px;
       width: 90%;
       gap: 10px;
-      h1 {
-        font-size: 24px;
+      border-radius: 20px;
+      padding: 42px 0;
+
+      .text-div {
+        gap: 8px;
+        h1 {
+          font-size: 28px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 20px;
+        }
       }
     }
   }

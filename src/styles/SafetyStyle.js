@@ -2,10 +2,14 @@ import styled from "styled-components";
 
 export const SafetyStyle = styled.div`
   max-width: 1600px;
+  margin: 0 auto;
   padding: 20px 3%;
-  h1 {
-    text-align: center;
-    padding: 8% 0;
+  .title {
+    h1 {
+      text-align: center;
+      padding: 40px 3%;
+      font-size: 48px;
+    }
   }
 
   .cardWrap {
@@ -17,6 +21,8 @@ export const SafetyStyle = styled.div`
     border-radius: 40px;
     perspective: 200px;
     padding: 20px;
+    max-width: 1050px;
+    margin: 0 auto;
 
     position: relative;
     .card {
@@ -41,11 +47,11 @@ export const SafetyStyle = styled.div`
           height: 64px;
         }
         h2 {
-          font-size: 48px;
+          font-size: 42px;
         }
         p {
           font-size: 20px;
-          line-height: 1.2;
+          line-height: 28px;
         }
       }
       .card-right {
@@ -64,6 +70,12 @@ export const SafetyStyle = styled.div`
   }
 
   @media (max-width: 992px) {
+    .title {
+      h1 {
+        padding: 30px 0;
+        font-size: 32px;
+      }
+    }
     .cardWrap {
       background-color: transparent;
       height: auto;
@@ -71,6 +83,7 @@ export const SafetyStyle = styled.div`
       .card {
         width: 100%;
         height: fit-content;
+        border-radius: 25px;
         .card-left {
           width: 100%;
           padding: 20px;

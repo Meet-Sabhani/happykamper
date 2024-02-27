@@ -31,7 +31,7 @@ export const MobileStyle = styled.div`
     }
     &:nth-child(4) {
       position: absolute;
-      top: 63%;
+      top: 58%;
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 5;
