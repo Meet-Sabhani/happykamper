@@ -95,11 +95,23 @@ export const DiscoverStyle = styled.div`
     h1 {
       font-size: 40px;
       text-align: center;
+      color: #6a6a6a;
+      span {
+        color: #000;
+      }
     }
     p {
       text-align: center;
+      line-height: 1.2;
+      font-size: 20px;
     }
   }
   @media (max-width: 600px) {
+    .text-container {
+      p {
+        font-size: 16px;
+        line-height: 1.1;
+      }
+    }
   }
 `;

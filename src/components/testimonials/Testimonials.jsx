@@ -6,7 +6,7 @@ import { DownloadNow } from "../download/DownloadNow";
 export const Testimonials = () => {
   const avatars = [];
 
-  for (let index = 0; index <= 26; index++) {
+  for (let index = 0; index <= 24; index++) {
     avatars.push(<img src={avtar} key={index} alt="" />);
   }
   return (

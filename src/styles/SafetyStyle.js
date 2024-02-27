@@ -35,6 +35,13 @@ export const SafetyStyle = styled.div`
           width: 64px;
           height: 64px;
         }
+        h2 {
+          font-size: 48px;
+        }
+        p {
+          font-size: 20px;
+          line-height: 1.2;
+        }
       }
       .card-right {
         width: 40%;
@@ -62,9 +69,26 @@ export const SafetyStyle = styled.div`
         .card-left {
           width: 100%;
           padding: 20px;
+          h2 {
+            font-size: 32px;
+          }
         }
         .card-right {
           display: none;
+        }
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    .cardWrap {
+      .card {
+        .card-left {
+          h2 {
+            font-size: 25px;
+          }
+          p {
+            font-size: 16px;
+          }
         }
       }
     }

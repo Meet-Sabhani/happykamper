@@ -5,6 +5,7 @@ export const GlobalStyles = createGlobalStyle`
 padding: 0;
 box-sizing: border-box;
 scroll-behavior: smooth;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .container{

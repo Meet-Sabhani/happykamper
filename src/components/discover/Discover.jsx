@@ -41,6 +41,10 @@ export const Discover = () => {
           <img src={art1} alt="" />
           <h4>art</h4>
         </div>
+        <div className="art">
+          <img src={art1} alt="" />
+          <h4>art</h4>
+        </div>
       </div>
 
       <div className="text-container">

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const TestimonialsStyle = styled.div`
-  padding: 50px 10%;
+  padding: 50px 13%;
   text-align: center;
   h1 {
     padding: 20px 0;
@@ -9,7 +9,7 @@ export const TestimonialsStyle = styled.div`
   .review {
     width: 100%;
     background-color: #f5f6f8;
-    padding: 35px;
+    padding: 45px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,14 +21,17 @@ export const TestimonialsStyle = styled.div`
       line-height: 1.3;
       font-size: 36px;
       padding: unset;
+      color: #464647;
     }
     img {
       width: 100px;
       height: 100px;
     }
     p {
-      span {
-        color: #484848;
+      font-size: 20px;
+      line-height: 1.2;
+      div {
+        color: #878889;
       }
     }
   }

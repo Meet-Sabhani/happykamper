@@ -10,6 +10,8 @@ export const QuestionsStyle = styled.div`
 
   p {
     padding: 20px;
+    font-size: 20px;
+    line-height: 1.2;
   }
 
   .CollapseWrap {
@@ -35,6 +37,10 @@ export const QuestionsStyle = styled.div`
   }
   @media (max-width: 600px) {
     padding: 0 4%;
+    p {
+      font-size: 16px;
+      line-height: 1.2;
+    }
     .CollapseWrap {
       .ant-collapse-item {
         .ant-collapse-header span {

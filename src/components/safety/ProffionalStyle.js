@@ -10,18 +10,23 @@ export const ProffionalStyle = styled.div`
     width: 50%;
     background-color: #fd0ea0;
     padding: 30px;
-    border-radius: 20px;
+    border-radius: 45px;
     color: #fff;
     .proffionalTop {
       display: flex;
-      gap: 15px;
+      gap: 12px;
       img {
         width: 80px;
         object-fit: contain;
       }
       h1 {
         font-size: 48px;
+        text-align: unset;
       }
+    }
+    p {
+      font-size: 20px;
+      line-height: 1.2;
     }
   }
   @media (max-width: 992px) {
@@ -31,6 +36,7 @@ export const ProffionalStyle = styled.div`
     .proffional {
       width: 100%;
       padding: 20px;
+      border-radius: 25px;
 
       .proffionalTop {
         gap: 8px;
