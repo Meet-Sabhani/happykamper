@@ -7,12 +7,13 @@ export const ContactStyle = styled.div`
   padding: 5%;
   border-radius: 30px;
   margin: 10vh auto;
-  .ant-row {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
+
   .Contact-left {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     img {
       width: 300px;
     }
