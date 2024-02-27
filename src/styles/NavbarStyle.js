@@ -8,7 +8,7 @@ export const NavbarStyle = styled.div`
   border-bottom: 1px solid #eee;
   max-width: 1800px;
   position: relative;
-  /* position: fixed; */
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;

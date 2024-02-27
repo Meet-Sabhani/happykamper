@@ -32,7 +32,7 @@ export const FooterStyle = styled.div`
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 25px;
     .footer-right-part {
       display: flex;
       flex-direction: column;
@@ -44,7 +44,7 @@ export const FooterStyle = styled.div`
       .icons {
         display: flex;
         justify-content: space-between;
-        gap: 10px;
+        gap: 14px;
         color: #fd0ea0;
         i {
           background-color: #fff;
@@ -83,6 +83,7 @@ export const FooterStyle = styled.div`
     .footer-right-container {
       flex-direction: column;
       margin: 0 auto;
+      gap: 20px;
       .footer-right-part {
         .icons {
           justify-content: center;
