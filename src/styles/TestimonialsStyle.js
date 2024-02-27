@@ -19,7 +19,7 @@ export const TestimonialsStyle = styled.div`
 
     h1 {
       line-height: 1.3;
-      font-size: 36px;
+      font-size: 48px;
       padding: unset;
       color: #464647;
     }
@@ -56,6 +56,13 @@ export const TestimonialsStyle = styled.div`
       }
     }
   }
+  @media (max-width: 992px) {
+    .review {
+      h1 {
+        font-size: 36px;
+      }
+    }
+  }
   @media (max-width: 768px) {
     .TestimonialBottom {
       padding: unset;
@@ -69,6 +76,7 @@ export const TestimonialsStyle = styled.div`
     }
     .review {
       gap: 15px;
+
       img {
         height: 48px;
         width: 48px;
