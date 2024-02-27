@@ -61,7 +61,7 @@ export const SliderStyle = styled.div`
       font-size: 48px;
       line-height: 1;
     }
-    p{
+    p {
       font-size: 20px;
       line-height: 1.2;
     }
@@ -75,6 +75,13 @@ export const SliderStyle = styled.div`
     }
   }
 
+  @media (max-width: 992px) {
+    .slider-right {
+      h1 {
+        font-size: 36px;
+      }
+    }
+  }
   @media (max-width: 750px) {
     .slider-dPink {
       flex-direction: column;
@@ -105,6 +112,9 @@ export const SliderStyle = styled.div`
     }
     .slider-right {
       width: 100%;
+      h1 {
+        font-size: 30px;
+      }
     }
   }
 `;

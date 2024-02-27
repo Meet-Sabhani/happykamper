@@ -14,6 +14,7 @@ export const ProffionalStyle = styled.div`
     color: #fff;
     .proffionalTop {
       display: flex;
+      align-items: center;
       gap: 12px;
       img {
         width: 80px;

@@ -93,7 +93,7 @@ export const DiscoverStyle = styled.div`
     gap: 20px;
 
     h1 {
-      font-size: 40px;
+      font-size: 48px;
       text-align: center;
       color: #6a6a6a;
       span {
@@ -108,6 +108,16 @@ export const DiscoverStyle = styled.div`
   }
   @media (max-width: 600px) {
     .text-container {
+      h1 {
+        font-size: 36px;
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    .text-container {
+      h1 {
+        font-size: 28px;
+      }
       p {
         font-size: 16px;
         line-height: 1.1;

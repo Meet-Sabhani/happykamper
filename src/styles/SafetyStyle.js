@@ -74,6 +74,7 @@ export const SafetyStyle = styled.div`
         .card-left {
           width: 100%;
           padding: 20px;
+          gap: 20px;
           h2 {
             font-size: 32px;
           }
@@ -88,6 +89,7 @@ export const SafetyStyle = styled.div`
     .cardWrap {
       .card {
         .card-left {
+          gap: 15px;
           h2 {
             font-size: 25px;
           }

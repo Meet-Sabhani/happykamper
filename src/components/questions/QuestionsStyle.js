@@ -16,6 +16,7 @@ export const QuestionsStyle = styled.div`
     font-size: 20px;
     line-height: 1.2;
     text-align: center;
+    color: #53615f;
   }
 
   .CollapseWrap {
@@ -40,6 +41,7 @@ export const QuestionsStyle = styled.div`
     }
   }
   @media (max-width: 992px) {
+    width: 90%;
     padding: 80px 48px;
   }
   @media (max-width: 600px) {
@@ -49,6 +51,10 @@ export const QuestionsStyle = styled.div`
       line-height: 1.2;
     }
     .CollapseWrap {
+      .ant-collapse-header-text {
+        font-size: 16px !important;
+        line-height: 1.1 !important;
+      }
       .ant-collapse-item {
         .ant-collapse-header span {
           font-size: 16px;

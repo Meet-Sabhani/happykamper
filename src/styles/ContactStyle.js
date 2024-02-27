@@ -25,7 +25,17 @@ export const ContactStyle = styled.div`
     background-color: #fff;
     padding: 40px 48px;
     border-radius: 15px;
-    border: 1px solid #F9F9F8;
+    border: 1px solid #f9f9f8;
+  }
+  @media (max-width: 992px) {
+    width: 90%;
+    .Contact-left {
+      align-items: center;
+
+      h1 {
+        font-size: 36px;
+      }
+    }
   }
   @media (max-width: 768px) {
     margin: 5vh auto;
@@ -35,6 +45,8 @@ export const ContactStyle = styled.div`
 
       h1 {
         text-align: center;
+        font-size: 30px;
+        line-height: 1.2;
       }
     }
     .Contact-right {

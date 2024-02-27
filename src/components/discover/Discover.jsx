@@ -49,7 +49,7 @@ export const Discover = () => {
 
       <div className="text-container">
         <h1>
-          Discover new activities for your children to{" "}
+          Discover new activities for your children to
           <span> learn, socialize and have fun </span>
         </h1>
         <p>

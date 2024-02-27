@@ -66,6 +66,10 @@ export const TestimonialsStyle = styled.div`
   @media (max-width: 768px) {
     .TestimonialBottom {
       padding: unset;
+      h2 {
+        font-size: 20px;
+        padding: 10px 0;
+      }
       .avatarsWrap {
         padding: 10px 0;
         img {
