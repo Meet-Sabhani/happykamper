@@ -23,8 +23,9 @@ export const ContactStyle = styled.div`
   }
   .Contact-right {
     background-color: #fff;
-    padding: 48px;
+    padding: 40px 48px;
     border-radius: 15px;
+    border: 1px solid #F9F9F8;
   }
   @media (max-width: 768px) {
     margin: 5vh auto;

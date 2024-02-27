@@ -26,7 +26,7 @@ export const Footers = () => {
           </div>
 
           <div className="footer-right-part">
-            <h2>Follow Us</h2> 
+            <h2>Follow Us</h2>
             <div className="icons">
               <i class="fab fa-facebook-square"></i>
               <i class="fab fa-twitter"></i>
@@ -51,7 +51,7 @@ export const Footers = () => {
         <Divider
           type="vertical"
           style={{
-            background: "#505D8A",
+            background: "#fff",
             height: "1.9em",
           }}
         />

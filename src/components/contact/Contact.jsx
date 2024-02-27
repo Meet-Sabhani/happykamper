@@ -50,6 +50,9 @@ export const Contact = () => {
               name="basic"
               labelCol={{
                 span: 24,
+                style: {
+                  fontWeight: "bold",
+                },
               }}
               wrapperCol={{
                 span: 24,
@@ -71,6 +74,13 @@ export const Contact = () => {
               <Form.Item name="email" label="E-mail">
                 <Input placeholder="Examplw@gmail.com" />
               </Form.Item>
+              <Form.Item name="select" label="How Can We Help You?">
+                <Select placeholder="Select Option" style={{ border: "unset" }}>
+                  <Option value="english">Business already Climed</Option>
+                  <Option value="Gujarati">Login issue</Option>
+                  <Option value="Gujarati">Class Registration</Option>
+                </Select>
+              </Form.Item>
 
               <Form.Item name="phone" label="Phone Number">
                 <Input
@@ -88,7 +98,18 @@ export const Contact = () => {
 
               <Form.Item>
                 <Flex justify="center">
-                  <Button type="primary" htmlType="submit">
+                  <Button
+                    type="primary"
+                    style={{
+                      backgroundColor: "#1A2C68",
+                      fontWeight: "bold",
+                      color: "#fff",
+                      fontSize: "20px",
+                      width: "100%",
+                      height: "unset",
+                    }}
+                    htmlType="submit"
+                  >
                     Submit Message
                   </Button>
                 </Flex>
