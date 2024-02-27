@@ -7,7 +7,7 @@ import { Proffional } from "./proffional";
 
 export const Safety = () => {
   return (
-    <div className="container">
+    <>
       <SafetyStyle id="safety">
         <h1>Your Children's Safety is Our #1 Priority</h1>
         <div className="cardWrap">
@@ -32,6 +32,6 @@ export const Safety = () => {
         </div>
         <Proffional />
       </SafetyStyle>
-    </div>
+    </>
   );
 };

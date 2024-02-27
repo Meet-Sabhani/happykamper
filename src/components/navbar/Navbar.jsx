@@ -48,7 +48,7 @@ export const Navbar = () => {
         </ul>
       </div>
       <div className="nav-right">
-        <Select defaultValue={"english"} style={{ border: "none" }}>
+        <Select defaultValue={"english"} style={{ border: "unset" }}>
           <Option value="english">English</Option>
           <Option value="Gujarati">Gujarati</Option>
         </Select>

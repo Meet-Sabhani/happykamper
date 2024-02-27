@@ -8,6 +8,8 @@ import mobile4 from "../../images/mobile4.webp";
 import mobile5 from "../../images/mobile5.webp";
 import mobile6 from "../../images/mobile6.webp";
 import mobile7 from "../../images/mobile7.webp";
+import appStore from "../../images/applestore.webp";
+import playStore from "../../images/googleplay.webp";
 import { MobileStyle } from "../../styles/MobileStyle";
 
 import { HomeStyle } from "../../styles/HomeStyle";
@@ -23,11 +25,18 @@ export const Home = () => {
         <p>Empower Your Child's Learning Journey Beyond the Classroom.</p>
       </div>
       <div className="circal">
-        <div className="downloadQR">
-          <img src={DownloadQR} alt="" />
-          <span>
-            Scan to download <br /> Happy Kamper App!
-          </span>
+        <div className="download-options">
+          <div className="QR-text-container">
+            <img src={DownloadQR} alt="" />
+            <span>
+              Scan to download <br /> Happy Kamper App!
+            </span>
+          </div>
+
+          <div className="store-img-container">
+            <img src={playStore} alt="" />
+            <img src={appStore} alt="" />
+          </div>
         </div>
         <MobileStyle>
           <img src={mobile1} alt="" />

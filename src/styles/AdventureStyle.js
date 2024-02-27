@@ -19,7 +19,7 @@ export const AdventureStyle = styled.div`
     display: flex;
     gap: 20px;
     white-space: normal;
-    animation: slide 6s infinite linear;
+    animation: slide 12s infinite linear;
     img {
       position: relative;
       min-width: 424px;
@@ -47,7 +47,7 @@ export const AdventureStyle = styled.div`
     .SecSlider {
       display: flex;
       gap: 20px;
-      animation: slideSen 6s infinite linear;
+      animation: slideSen 12s infinite linear;
       img {
         position: relative;
         min-width: 424px;
@@ -72,11 +72,11 @@ export const AdventureStyle = styled.div`
   .adventureBox {
     background-color: #1a2c68;
     color: #fff;
-    padding: 30px;
+    padding: 40px 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     gap: 20px;
     width: 80%;
     border-radius: 20px;
@@ -87,10 +87,16 @@ export const AdventureStyle = styled.div`
     left: 50%;
 
     h1 {
-      font-size: 36px;
+      font-size: 48px;
+    }
+    p {
+      font-size: 20px;
+      line-height: 1.2;
     }
   }
   @media (max-width: 992px) {
+    margin-bottom: 15%;
+
     .fSlider {
       img {
         min-width: 204px;
@@ -111,9 +117,18 @@ export const AdventureStyle = styled.div`
         }
       }
     }
+    .adventureBox {
+      gap: 15px;
+      h1 {
+        font-size: 32px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
   }
   @media (max-width: 600px) {
-    margin-bottom: 30%;
+    margin-bottom: 25%;
     .fSlider {
       img {
         min-width: 164px;
@@ -138,6 +153,7 @@ export const AdventureStyle = styled.div`
       transform: translate(-50%, 45%);
       padding: 20px;
       width: 90%;
+      gap: 10px;
       h1 {
         font-size: 24px;
       }

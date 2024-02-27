@@ -15,10 +15,13 @@ export const ContactStyle = styled.div`
   }
   .Contact-right {
     background-color: #fff;
-    padding: 20px;
+    padding: 48px;
     border-radius: 15px;
   }
   @media (max-width: 768px) {
     margin: 5vh auto;
+    .Contact-right {
+      padding: 20px;
+    }
   }
 `;

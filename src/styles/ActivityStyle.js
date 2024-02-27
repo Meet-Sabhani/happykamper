@@ -16,6 +16,13 @@ export const ActivityStyle = styled.div`
 
       h2 {
         line-height: 1.3;
+        font-weight: bold;
+        font-size: 28px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 1.3;
+        color: rgb(26, 26, 26);
       }
     }
     .parent {

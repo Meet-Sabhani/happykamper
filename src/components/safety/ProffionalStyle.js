@@ -4,7 +4,7 @@ export const ProffionalStyle = styled.div`
   display: flex;
   justify-content: space-between;
   gap: 30px;
-  padding: 4%;
+  padding: 40px 48px;
 
   .proffional {
     width: 50%;
@@ -22,6 +22,7 @@ export const ProffionalStyle = styled.div`
       h1 {
         font-size: 48px;
         text-align: unset;
+        padding: unset;
       }
     }
     p {

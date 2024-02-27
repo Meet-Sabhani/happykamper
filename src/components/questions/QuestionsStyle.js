@@ -6,12 +6,16 @@ export const QuestionsStyle = styled.div`
   background-color: #d1fff8;
   border-radius: 20px;
   padding: 80px 18.1%;
-  text-align: center;
+
+  h1 {
+    text-align: center;
+  }
 
   p {
-    padding: 20px;
+    padding: 20px 0;
     font-size: 20px;
     line-height: 1.2;
+    text-align: center;
   }
 
   .CollapseWrap {
@@ -35,8 +39,11 @@ export const QuestionsStyle = styled.div`
       }
     }
   }
+  @media (max-width: 992px) {
+    padding: 80px 48px;
+  }
   @media (max-width: 600px) {
-    padding: 0 4%;
+    padding: 20px;
     p {
       font-size: 16px;
       line-height: 1.2;

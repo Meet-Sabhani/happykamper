@@ -6,7 +6,7 @@ export const SliderStyle = styled.div`
 
   margin: 0 auto;
   .slider-dPink {
-    width: 90%;
+    width: 85%;
     height: 100vh;
     border-radius: 30px;
     max-width: 1400px;
@@ -43,7 +43,7 @@ export const SliderStyle = styled.div`
     }
   }
   .slider-right {
-    width: 50%;
+    width: calc(100% - 400px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -51,6 +51,20 @@ export const SliderStyle = styled.div`
     gap: 20px;
     position: relative;
     height: 100%;
+
+    .carousel-title {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: 48px;
+      line-height: 1;
+    }
+    p{
+      font-size: 20px;
+      line-height: 1.2;
+    }
 
     img {
       width: 30px;

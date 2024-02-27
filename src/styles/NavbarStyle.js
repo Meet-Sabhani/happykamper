@@ -4,10 +4,16 @@ export const NavbarStyle = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 6%;
+  padding: 24px 80px;
   border-bottom: 1px solid #eee;
   max-width: 1800px;
   position: relative;
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: #fff;
 
   .nav-left {
     display: flex;
@@ -46,13 +52,22 @@ export const NavbarStyle = styled.div`
 
   .nav-right {
     display: flex;
+    align-items: center;
     gap: 20px;
-    select {
-      color: #5e5e5e;
-      font-size: 18px;
-      border: none;
-      font-weight: 600;
+
+    :where(.css-dev-only-do-not-override-1xg9z9n).ant-select-outlined:not(
+        .ant-select-customize-input
+      )
+      .ant-select-selector {
+      border: unset;
     }
+    :where(.css-dev-only-do-not-override-1xg9z9n).ant-select-single
+      .ant-select-selector {
+      font-size: 18px;
+      font-weight: bold;
+      color: #5e5e5e;
+    }
+
     a {
       border: none;
       padding: 10px 20px;
@@ -76,11 +91,13 @@ export const NavbarStyle = styled.div`
   }
 
   @media (max-width: 992px) {
+    padding: 12px 20px;
+
     .reslogo {
       display: block;
       img {
-        width: 100px;
-        height: 50px;
+        width: 58px;
+        height: 24px;
       }
     }
 
@@ -89,15 +106,19 @@ export const NavbarStyle = styled.div`
     }
 
     .nav-right {
-      .ant-select-selector {
+      a {
+        font-size: 13px;
+        padding: 8px;
+      }
+      .ant-select {
         display: none;
       }
     }
 
     .showMenu {
       display: flex;
-
       gap: 10px;
+
       ul {
         display: flex;
         flex-direction: column;
@@ -111,8 +132,11 @@ export const NavbarStyle = styled.div`
         background-color: #fff;
         z-index: 9;
         li {
+          &:nth-child(1) {
+            display: none;
+          }
           a {
-            font-size: 30px;
+            font-size: 20px;
           }
         }
       }

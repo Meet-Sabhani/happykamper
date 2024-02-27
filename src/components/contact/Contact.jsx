@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Col, Form, Input, Row, Select } from "antd";
+import { Button, Col, Flex, Form, Input, Row, Select } from "antd";
 import { Option } from "antd/es/mentions";
 import contactImg from "../../images/contect.webp";
 import { ContactStyle } from "../../styles/ContactStyle";
@@ -17,12 +17,13 @@ export const Contact = () => {
   const prefixSelector = (
     <Form.Item name="prefix" noStyle>
       <Select
+        defaultValue={"+91"}
         style={{
           width: 70,
         }}
       >
-        <Option value="86">+91</Option>
-        <Option value="87">+63</Option>
+        <Option value="+91">+91</Option>
+        <Option value="+63">+63</Option>
       </Select>
     </Form.Item>
   );
@@ -37,21 +38,21 @@ export const Contact = () => {
           lg: 32,
         }}
       >
-        <Col xs={{ span: 24 }} md={{ span: 12 }}>
+        <Col xs={{ span: 24 }} md={{ span: 14 }}>
           <div className="Contact-left">
             <img src={contactImg} alt="" />
             <h1>Love to hear from you. Let’s get in touch!</h1>
           </div>
         </Col>
-        <Col xs={{ span: 24 }} md={{ span: 12 }}>
+        <Col xs={{ span: 24 }} md={{ span: 10 }}>
           <div className="Contact-right">
             <Form
               name="basic"
               labelCol={{
-                span: 8,
+                span: 24,
               }}
               wrapperCol={{
-                span: 16,
+                span: 24,
               }}
               style={{
                 maxWidth: 600,
@@ -63,67 +64,34 @@ export const Contact = () => {
               onFinishFailed={onFinishFailed}
               autoComplete="off"
             >
-              <Form.Item
-                label="Name"
-                name="Name"
-                rules={[
-                  {
-                    required: true,
-                    message: "Please input your Name!",
-                  },
-                ]}
-              >
-                <Input />
+              <Form.Item label="Name" name="Name">
+                <Input placeholder="Enter Your Full Name" />
               </Form.Item>
 
-              <Form.Item
-                name="email"
-                label="E-mail"
-                rules={[
-                  {
-                    type: "email",
-                    message: "The input is not valid E-mail!",
-                  },
-                  {
-                    required: true,
-                    message: "Please input your E-mail!",
-                  },
-                ]}
-              >
-                <Input />
+              <Form.Item name="email" label="E-mail">
+                <Input placeholder="Examplw@gmail.com" />
               </Form.Item>
 
-              <Form.Item
-                name="phone"
-                label="Phone Number"
-                rules={[
-                  {
-                    required: true,
-                    message: "Please input your phone number!",
-                  },
-                ]}
-              >
+              <Form.Item name="phone" label="Phone Number">
                 <Input
                   addonBefore={prefixSelector}
+                  placeholder="87687687687"
                   style={{
                     width: "100%",
                   }}
                 />
               </Form.Item>
 
-              <Form.Item label="TextArea">
-                <TextArea rows={4} />
+              <Form.Item label="Tell us more">
+                <TextArea rows={2} placeholder="Describe more Detail" />
               </Form.Item>
 
-              <Form.Item
-                wrapperCol={{
-                  offset: 8,
-                  span: 16,
-                }}
-              >
-                <Button type="primary" htmlType="submit">
-                  Submit Message
-                </Button>
+              <Form.Item>
+                <Flex justify="center">
+                  <Button type="primary" htmlType="submit">
+                    Submit Message
+                  </Button>
+                </Flex>
               </Form.Item>
             </Form>
           </div>
