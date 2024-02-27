@@ -11,11 +11,14 @@ export const ContactStyle = styled.div`
   .Contact-left {
     display: flex;
     height: 100%;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
     img {
-      width: 300px;
+      width: 248px;
+      height: 212px;
+    }
+    h1 {
+      font-size: 48px;
     }
   }
   .Contact-right {
@@ -27,6 +30,8 @@ export const ContactStyle = styled.div`
     margin: 5vh auto;
 
     .Contact-left {
+      align-items: center;
+
       h1 {
         text-align: center;
       }

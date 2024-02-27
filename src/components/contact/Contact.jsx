@@ -38,13 +38,13 @@ export const Contact = () => {
           lg: 32,
         }}
       >
-        <Col xs={{ span: 24 }} md={{ span: 14 }}>
+        <Col xs={{ span: 24 }} md={{ span: 12 }}>
           <div className="Contact-left">
             <img src={contactImg} alt="" />
             <h1>Love to hear from you. Let’s get in touch!</h1>
           </div>
         </Col>
-        <Col xs={{ span: 24 }} md={{ span: 10 }}>
+        <Col xs={{ span: 24 }} md={{ span: 12 }}>
           <div className="Contact-right">
             <Form
               name="basic"
