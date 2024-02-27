@@ -37,10 +37,10 @@ export const Adventure = () => {
           </div>
           <div className="SecSlider">
             <img src={s3} alt="" />
-            <img src={s1} alt="" />
-            <img src={s5} alt="" />
-            <img src={s4} alt="" />
             <img src={s2} alt="" />
+            <img src={s4} alt="" />
+            <img src={s5} alt="" />
+            <img src={s1} alt="" />
           </div>
         </div>
       </div>

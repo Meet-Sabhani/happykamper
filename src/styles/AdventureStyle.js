@@ -18,6 +18,7 @@ export const AdventureStyle = styled.div`
   .fSlider {
     display: flex;
     gap: 20px;
+    white-space: normal;
     animation: slide 6s infinite linear;
     img {
       position: relative;
