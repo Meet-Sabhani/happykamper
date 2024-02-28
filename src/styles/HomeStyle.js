@@ -105,7 +105,28 @@ export const HomeStyle = styled.div`
         line-height: 1.2;
       }
     }
+   
+  }
+  @media (max-width: 650px) {
+    .logo {
+      width: 154px;
+      height: 70px;
+    }
+    .center {
+      gap: 10px;
+      width: unset;
+
+      h1 {
+        font-size: 24px;
+        line-height: 1.1;
+      }
+    }
+    /* .circal {
+      height: 400px;
+    } */
     .circal {
+      height: 400px;
+
       .download-options {
         .QR-text-container {
           display: none;
@@ -120,21 +141,6 @@ export const HomeStyle = styled.div`
             height: 40px;
           }
         }
-      }
-    }
-  }
-  @media (max-width: 650px) {
-    .logo {
-      width: 154px;
-      height: 70px;
-    }
-    .center {
-      gap: 10px;
-      width: unset;
-
-      h1 {
-        font-size: 24px;
-        line-height: 1.1;
       }
     }
   }

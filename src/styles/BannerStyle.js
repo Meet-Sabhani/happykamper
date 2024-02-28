@@ -26,21 +26,20 @@ export const BannerStyle = styled.div`
     img {
       width: 122px;
       height: 40px;
-      object-fit: cover;
+      object-fit: contain;
     }
   }
 
-  @media (max-width: 630px) {
+  @media (max-width: 667px) {
     h2 {
       text-align: center;
+      font-size: 18px;
     }
     .logos {
       gap: 20px;
       justify-content: center;
       img {
-        &:nth-child(2) {
-          display: none;
-        }
+        width: 60.8px;
       }
     }
   }

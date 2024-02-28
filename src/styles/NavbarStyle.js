@@ -5,7 +5,6 @@ export const NavbarStyle = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 24px 80px;
-  border-bottom: 1px solid #eee;
   max-width: 1800px;
   position: relative;
   margin: 0 auto;
@@ -51,19 +50,25 @@ export const NavbarStyle = styled.div`
     }
   }
 
+  .ant-drawer-body {
+    padding: 0;
+    ul {
+      list-style: none;
+      li {
+        list-style: none;
+      }
+    }
+  }
+
   .nav-right {
     display: flex;
     align-items: center;
     gap: 20px;
 
-    :where(.css-dev-only-do-not-override-1xg9z9n).ant-select-outlined:not(
-        .ant-select-customize-input
-      )
-      .ant-select-selector {
+    .ant-select-selector {
       border: unset;
     }
-    :where(.css-dev-only-do-not-override-1xg9z9n).ant-select-single
-      .ant-select-selector {
+    .ant-select-selector {
       font-size: 18px;
       font-weight: bold;
       color: #5e5e5e;
@@ -87,14 +92,16 @@ export const NavbarStyle = styled.div`
   }
 
   .reslogo,
-  .menu {
+  .menu,
+  .close {
     display: none;
   }
 
   @media (max-width: 992px) {
     padding: 12px 20px;
 
-    .reslogo {
+    .reslogo,
+    .close {
       display: block;
       img {
         width: 58px;
@@ -106,38 +113,29 @@ export const NavbarStyle = styled.div`
       display: none;
     }
 
-    .nav-right {
-      a {
-        font-size: 13px;
-        padding: 8px;
-      }
-      .ant-select {
-        display: none;
-      }
-    }
-
-    .showMenu {
-      display: flex;
-      gap: 10px;
-
-      ul {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        padding: 0 59px;
-        gap: 10px;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: #fff;
-        z-index: 9;
-        li {
-          &:nth-child(1) {
-            display: none;
+    .ant-drawer {
+      .ant-drawer-body {
+        ul {
+          gap: 10px;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          padding: 24px;
+          gap: 10px;
+          .close {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            font-size: 24px;
+            font-weight: 100;
           }
-          a {
-            font-size: 20px;
+
+          li {
+            list-style: none;
+            a {
+              font-size: 20px;
+            }
           }
         }
       }
@@ -146,7 +144,11 @@ export const NavbarStyle = styled.div`
     .nav-right {
       display: flex;
       align-items: center;
-      select {
+      a {
+        font-size: 13px;
+        padding: 8px;
+      }
+      .ant-select {
         display: none;
       }
       .menu {
@@ -160,20 +162,6 @@ export const NavbarStyle = styled.div`
           border-radius: 3px;
           background-color: #000;
           transition: 0.5s;
-        }
-      }
-      .openMenu {
-        transition: 0.5s;
-        .menu-line {
-          &:nth-child(1) {
-            transform: rotate(45deg) translate(3px, 3px);
-          }
-          &:nth-child(2) {
-            transform: rotate(-45deg) translate(3px, -3px);
-          }
-          &:nth-child(3) {
-            display: none;
-          }
         }
       }
     }
