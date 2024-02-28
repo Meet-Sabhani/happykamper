@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Col, Flex, Form, Input, Row, Select } from "antd";
+import { Button, Col, Flex, Form, Input, Row, Select, Space } from "antd";
 import { Option } from "antd/es/mentions";
 import contactImg from "../../images/contect.webp";
 import { ContactStyle } from "../../styles/ContactStyle";
@@ -59,13 +59,15 @@ export const Contact = () => {
               </Form.Item>
 
               <Form.Item name="phone" label="Phone Number">
-                <Input
-                  addonBefore={prefixSelector}
-                  placeholder="87687687687"
-                  style={{
-                    width: "100%",
-                  }}
-                />
+                <div className="PhoneNum">
+                  <Input
+                    addonBefore={prefixSelector}
+                    placeholder="87687687687"
+                    style={{
+                      width: "100%",
+                    }}
+                  />
+                </div>
               </Form.Item>
 
               <Form.Item name="email" label="Email Address">

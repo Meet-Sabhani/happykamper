@@ -112,7 +112,7 @@ const DrawerWrapper = styled.ul`
     position: absolute;
     top: 0;
     right: 0;
-    font-size: 20px;
+    font-size: 30px;
     color: #000;
     cursor: pointer;
   }

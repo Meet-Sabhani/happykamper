@@ -11,6 +11,8 @@ import { Contact } from "./components/contact/Contact";
 import { Adventure } from "./components/adventure/Advanture";
 import { Footers } from "./components/footer/Footer";
 import { BannerLayers } from "./components/home/BannerLayers";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export const App = () => {
   return (
