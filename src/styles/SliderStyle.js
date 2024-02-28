@@ -46,7 +46,7 @@ export const SliderStyle = styled.div`
     }
   }
   .slider-right {
-    padding: 0 20px;
+    padding: unset;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -83,6 +83,7 @@ export const SliderStyle = styled.div`
       flex-direction: column;
       height: auto;
       width: calc(100% - 40px);
+      padding: 20px;
     }
     .slider-left {
       min-height: 248px;

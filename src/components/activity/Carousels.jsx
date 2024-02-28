@@ -9,7 +9,10 @@ import { DownloadNow } from "../download/DownloadNow";
 export const Carousels = () => {
   return (
     <>
-      <Carousel autoplay autoplaySpeed={1500}>
+      <Carousel
+        //  autoplay
+        autoplaySpeed={1500}
+      >
         <SliderStyle>
           <div className="slider-dPink">
             <div className="slider-left">

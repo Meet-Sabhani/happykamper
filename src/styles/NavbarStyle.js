@@ -38,7 +38,8 @@ export const NavbarStyle = styled.div`
 
         a {
           text-decoration: none;
-          font-size: 18px;
+          font-size: 20px;
+          font-weight: 500;
           color: #5e5e5e;
           transition: 0.5s;
 

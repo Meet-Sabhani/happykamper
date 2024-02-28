@@ -55,7 +55,7 @@ export const MobileStyle = styled.div`
     }
   }
   @media (max-width: 768px) {
-    height: 314px;
+    height: 614px;
 
     img {
       width: 148px;
