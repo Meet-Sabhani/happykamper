@@ -9,10 +9,7 @@ import { DownloadNow } from "../download/DownloadNow";
 export const Carousels = () => {
   return (
     <>
-      <Carousel
-        //  autoplay
-        autoplaySpeed={1500}
-      >
+      <Carousel autoplay autoplaySpeed={1500}>
         <SliderStyle>
           <div className="slider-dPink">
             <div className="slider-left">
@@ -34,7 +31,7 @@ export const Carousels = () => {
           </div>
         </SliderStyle>
         <SliderStyle>
-          <div className="slider-dPink">
+          <div className="slider-dPink" style={{ backgroundColor: "#1A2C68" }}>
             <div className="slider-left">
               <img src={img2} alt="" />
               <img src={img5} alt="" />
@@ -77,7 +74,7 @@ export const Carousels = () => {
           </div>
         </SliderStyle>
         <SliderStyle>
-          <div className="slider-dPink">
+          <div className="slider-dPink" style={{ backgroundColor: "#24D1BA" }}>
             <div className="slider-left">
               <img src={img5} alt="" />
               <img src={img2} alt="" />
