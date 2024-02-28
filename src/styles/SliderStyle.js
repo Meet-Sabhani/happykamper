@@ -3,8 +3,9 @@ import styled from "styled-components";
 export const SliderStyle = styled.div`
   display: flex;
   gap: 5vw;
-
   margin: 0 auto;
+  max-width: 1400px;
+
   .slider-dPink {
     width: 85%;
     height: 100vh;
@@ -76,18 +77,13 @@ export const SliderStyle = styled.div`
   }
 
   @media (max-width: 992px) {
-    .slider-right {
-      h1 {
-        font-size: 36px;
-      }
-    }
-  }
-  @media (max-width: 750px) {
     .slider-dPink {
       flex-direction: column;
       height: auto;
-      width: 90%;
+      width: calc(100% - 40px);
       padding: 5%;
+      gap: 30px;
+      gap: 48px;
     }
     .slider-left {
       height: 248px;
@@ -114,11 +110,20 @@ export const SliderStyle = styled.div`
       width: 100%;
       gap: 15px;
       h1 {
-        font-size: 30px;
+        font-size: 32px;
+        line-height: 48px;
       }
       p {
         font-size: 16px;
         line-height: 20px;
+      }
+    }
+  }
+  @media (max-width: 667px) {
+    .slider-right {
+      gap: 8px;
+      h1 {
+        font-size: 28px;
       }
     }
   }

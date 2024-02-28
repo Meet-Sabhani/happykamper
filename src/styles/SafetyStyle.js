@@ -77,7 +77,6 @@ export const SafetyStyle = styled.div`
       }
     }
     .cardWrap {
-      background-color: transparent;
       height: auto;
       border-radius: 25px;
       .card {
@@ -92,23 +91,26 @@ export const SafetyStyle = styled.div`
             font-size: 32px;
           }
         }
-        .card-right {
-          display: none;
-        }
       }
     }
   }
-  @media (max-width: 600px) {
+  @media (max-width: 668px) {
     .cardWrap {
+      padding: initial;
       .card {
         .card-left {
           gap: 15px;
+          padding: initial;
           h2 {
             font-size: 25px;
           }
           p {
             font-size: 16px;
+            line-height: 20px;
           }
+        }
+        .card-right {
+          display: none;
         }
       }
     }

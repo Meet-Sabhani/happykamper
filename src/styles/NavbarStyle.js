@@ -50,15 +50,10 @@ export const NavbarStyle = styled.div`
     }
   }
 
-  .ant-drawer-body {
+  /* .ant-drawer-body {
     padding: 0;
-    ul {
-      list-style: none;
-      li {
-        list-style: none;
-      }
-    }
-  }
+    background: #000;
+  } */
 
   .nav-right {
     display: flex;

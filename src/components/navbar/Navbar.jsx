@@ -57,8 +57,9 @@ export const Navbar = () => {
         onClose={onClose}
         open={open}
         key={placement}
-        height={230}
+        height={235}
         headerStyle={{ display: "none" }}
+        x
       >
         <DrawerWrapper>
           <li className="closeDrawer" onClick={onClose}>
@@ -113,6 +114,7 @@ const DrawerWrapper = styled.ul`
     right: 0;
     font-size: 20px;
     color: #000;
+    cursor: pointer;
   }
   li {
     a {
