@@ -8,7 +8,7 @@ export const NavbarStyle = styled.div`
   max-width: 1800px;
   position: relative;
   margin: 0 auto;
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   left: 0;
   right: 0;
@@ -62,6 +62,11 @@ export const NavbarStyle = styled.div`
 
     .ant-select-selector {
       border: unset;
+      .ant-select-selection-item {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: bold;
+      }
     }
     .ant-select-selector {
       font-size: 18px;

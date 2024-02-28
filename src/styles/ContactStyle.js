@@ -8,7 +8,7 @@ export const ContactStyle = styled.div`
   border-radius: 30px;
   margin: 10vh auto;
   max-width: 1800px;
-margin: 0 auto;
+  margin: 80px auto;
 
   .Contact-left {
     display: flex;

@@ -8,6 +8,10 @@ scroll-behavior: smooth;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+&::-webkit-scrollbar{
+    display: none;
+}
+
 .container{
     padding: 10px 10%;
     max-width: 1600px;

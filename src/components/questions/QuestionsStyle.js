@@ -1,13 +1,12 @@
 import styled from "styled-components";
 
 export const QuestionsStyle = styled.div`
-  margin: 0 auto;
   width: 80%;
   background-color: #d1fff8;
   border-radius: 20px;
-  padding: 80px 16%;
+  padding: 80px 203px;
   max-width: 1800px;
-
+  margin: 80px auto;
 
   h1 {
     text-align: center;

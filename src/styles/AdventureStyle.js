@@ -3,10 +3,9 @@ import styled from "styled-components";
 export const AdventureStyle = styled.div`
   position: relative;
   height: max-content;
-  padding: 50px 0;
-  margin-bottom: 10%;
+  padding: 48px 0;
   max-width: 1800px;
-  margin: 0 auto;
+  margin: 2rem auto 8rem;
 
   .sliders-container {
     display: flex;
@@ -106,8 +105,6 @@ export const AdventureStyle = styled.div`
     }
   }
   @media (max-width: 992px) {
-    margin-bottom: 15%;
-
     .fSlider {
       img {
         min-width: 204px;
@@ -134,7 +131,6 @@ export const AdventureStyle = styled.div`
     }
   }
   @media (max-width: 668px) {
-    margin-bottom: 25%;
     .fSlider {
       img {
         min-width: 164px;

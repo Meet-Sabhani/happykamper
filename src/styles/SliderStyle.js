@@ -7,44 +7,46 @@ export const SliderStyle = styled.div`
   max-width: 1400px;
 
   .slider-dPink {
-    width: 85%;
+    width: calc(100% - 40px);
+    max-width: 1120px;
     height: 100vh;
+    max-height: 800px;
     border-radius: 30px;
-    max-width: 1400px;
     margin: 0 auto;
     display: flex;
     background-color: #fd0ea0;
     align-items: center;
-    padding: 4%;
+    padding: 48px;
     gap: 20px;
   }
   .slider-left {
     display: flex;
-    height: 400px;
-    width: 400px;
+    height: 480px;
+    width: 480px;
+    min-width: 480px;
     background-color: #fff;
     border-radius: 50%;
     position: relative;
     img {
-      width: 174px;
+      width: 214px;
       height: 416px;
       object-fit: contain;
+      top: 10%;
       &:nth-child(1) {
         position: absolute;
-        top: 0px;
         left: 42px;
         transform: rotate(-3deg);
       }
       &:nth-child(2) {
         position: absolute;
-        top: 10px;
         right: 42px;
         transform: rotate(3deg);
+        top: 12%;
       }
     }
   }
   .slider-right {
-    width: calc(100% - 400px);
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -81,37 +83,34 @@ export const SliderStyle = styled.div`
       flex-direction: column;
       height: auto;
       width: calc(100% - 40px);
-      padding: 5%;
-      gap: 30px;
-      gap: 48px;
     }
     .slider-left {
+      min-height: 248px;
       height: 248px;
       width: 248px;
+      min-width: 248px;
 
       img {
-        height: 248px;
-        width: 248px;
+        width: 110px;
+        height: 215px;
         &:nth-child(1) {
-          position: absolute;
-          top: 0px;
-          left: 42px;
-          transform: rotate(3deg);
+          left: 0;
+          left: 22px;
         }
         &:nth-child(2) {
-          position: absolute;
-          top: 10px;
-          right: 42px;
-          transform: rotate(-3deg);
+          right: 22px;
         }
       }
     }
     .slider-right {
       width: 100%;
-      gap: 15px;
+      gap: 4px;
+      min-height: 206px;
+      justify-content: start;
+
       h1 {
-        font-size: 32px;
-        line-height: 48px;
+        font-size: 25px;
+        line-height: 32px;
       }
       p {
         font-size: 16px;

@@ -12,34 +12,35 @@ export const DiscoverStyle = styled.div`
     display: flex;
     justify-content: center;
     position: relative;
-    height: 400px;
-    width: 535px;
+    height: 420px;
+    width: 576px;
+    max-width: 576px;
     overflow: hidden;
     border-bottom: 1px solid #000;
 
     img {
-      width: 260px;
-      height: 416.75px;
+      width: 265.59px;
+      height: 516.75px;
       object-fit: contain;
       position: relative;
+      top: 10%;
 
       &:nth-child(1) {
         position: absolute;
         transform: rotate(-2deg);
         left: 8%;
-        bottom: -60px;
       }
       &:nth-child(2) {
         position: absolute;
         transform: rotate(2deg);
-        bottom: -70px;
         right: 8%;
+        top: 13%;
       }
     }
     &::before {
       content: "";
-      width: 500px;
-      height: 500px;
+      width: 576px;
+      height: 576px;
       background-color: #1a2c68;
       position: absolute;
       border-radius: 50%;
