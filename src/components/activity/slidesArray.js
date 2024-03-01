@@ -3,7 +3,7 @@ import img5 from "../../images/mobile4.webp";
 
 export const slides = [
     {
-      backgroundColor: "#1A2C68",
+      backgroundColor: "#FD0EA0",
       images: [img5, img2],
       title: "PERSONALIZATION",
       mainTitle: "Personalized recommendations based on your kids interests",
@@ -19,7 +19,7 @@ export const slides = [
         "Easily input their details, interests, and specific needs, enabling tailored recommendations for a curated and engaging journey within the app.",
     },
     {
-      backgroundColor: "#1A2C68",
+      backgroundColor: "#FD0EA0",
       images: [img5, img2],
       title: "PERSONALIZATION",
       mainTitle: "Personalized recommendations based on your kids interests",

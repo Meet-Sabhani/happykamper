@@ -1,14 +1,13 @@
 import styled from "styled-components";
 
 export const SliderStyle = styled.div`
-  display: flex;
-  gap: 5vw;
-  margin: 0 auto;
   max-width: 1400px;
+  margin: 0 auto;
+  overflow: hidden;
 
   .slider-dPink {
     width: calc(100% - 40px);
-    max-width: 1120px;
+    /* max-width: 1120px; */
     height: 100vh;
     max-height: 800px;
     border-radius: 30px;

@@ -9,7 +9,7 @@ export const ActivityStyle = styled.div`
     justify-content: space-between;
     width: 80%;
     margin: 0 auto;
-    padding: 30px 8%;
+    padding: 30px 160px;
 
     .parent,
     .provider {

@@ -28,6 +28,9 @@ export const AdventureStyle = styled.div`
     margin: 0 50px;
   }
   .firstSliderWrap {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .adventureBox {

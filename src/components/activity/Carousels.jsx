@@ -4,6 +4,7 @@ import { DownloadNow } from "../download/DownloadNow";
 import logo from "../../images/LogoWhite.webp";
 import { slides } from "./slidesArray";
 import Slider from "react-slick";
+import { Carousel } from "antd";
 
 export const Carousels = () => {
   var settings = {
@@ -16,7 +17,7 @@ export const Carousels = () => {
     autoplay: true,
   };
   return (
-    <>
+    <Carousel dots={false}>
       <Slider {...settings}>
         {slides.map((slide, index) => (
           <SliderStyle key={index}>
@@ -42,6 +43,6 @@ export const Carousels = () => {
           </SliderStyle>
         ))}
       </Slider>
-    </>
+    </Carousel>
   );
 };

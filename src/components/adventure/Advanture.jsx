@@ -7,6 +7,7 @@ import s5 from "../../images/S5.svg";
 import { AdventureStyle } from "../../styles/AdventureStyle";
 import { DownloadNow } from "../download/DownloadNow";
 import Slider from "react-slick";
+import { Carousel } from "antd";
 
 export const Adventure = () => {
   var settings = {
@@ -32,23 +33,27 @@ export const Adventure = () => {
   return (
     <AdventureStyle>
       <div className="firstSliderWrap">
-        <Slider {...settings}>
-          <img src={s1} alt="" />
-          <img src={s2} alt="" />
-          <img src={s3} alt="" />
-          <img src={s4} alt="" />
-          <img src={s5} alt="" />
-        </Slider>
+        <Carousel>
+          <Slider {...settings}>
+            <img src={s1} alt="" />
+            <img src={s2} alt="" />
+            <img src={s3} alt="" />
+            <img src={s4} alt="" />
+            <img src={s5} alt="" />
+          </Slider>
+        </Carousel>
       </div>
 
-      <div className="secondSliderWrap">
-        <Slider {...settings1}>
-          <img src={s1} alt="" />
-          <img src={s2} alt="" />
-          <img src={s3} alt="" />
-          <img src={s4} alt="" />
-          <img src={s5} alt="" />
-        </Slider>
+      <div className="firstSliderWrap">
+        <Carousel>
+          <Slider {...settings1}>
+            <img src={s1} alt="" />
+            <img src={s2} alt="" />
+            <img src={s3} alt="" />
+            <img src={s4} alt="" />
+            <img src={s5} alt="" />
+          </Slider>
+        </Carousel>
       </div>
 
       <div className="adventureBox">
