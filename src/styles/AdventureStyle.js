@@ -6,12 +6,13 @@ export const AdventureStyle = styled.div`
   padding: 48px 0;
   max-width: 1800px;
   margin: 2rem auto 8rem;
+
   .slider-item {
-    margin: 0 30px;
+    margin: 0 15px;
   }
 
   .slick-slide > div {
-    margin: 5px 20px;
+    margin: 2px 20px;
   }
   .slick-list {
     margin: 0 -20px;
