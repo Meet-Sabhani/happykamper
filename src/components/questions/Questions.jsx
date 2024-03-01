@@ -14,7 +14,7 @@ export const Questions = () => {
       </p>
       <div className="CollapseWrap">
         {faqDataArray.map((item) => (
-          <Collapse key={item.key} items={[item]} className='collapse' />
+          <Collapse key={item.key} items={[item]} className="collapse" />
         ))}
       </div>
     </QuestionsStyle>

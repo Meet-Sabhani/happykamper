@@ -34,11 +34,10 @@ export const QuestionsStyle = styled.div`
       font-weight: 600;
 
       .ant-collapse-content-box {
-        padding: 0;
+        padding: 0px 20px 20px 37px;
       }
       .ant-collapse-content {
-        border-top: unset;
-        padding: 0px 20px 20px 37px;
+        border-top: hidden;
       }
       p {
         font-size: 16px;
