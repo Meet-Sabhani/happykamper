@@ -29,16 +29,16 @@ export const Footers = () => {
             <h2>Follow Us</h2>
             <div className="icons">
               <div className="icon-wrap">
-                <i class="fa-brands fa-facebook-f"></i>
+                <i className="fa-brands fa-facebook-f"></i>
               </div>
               <div className="icon-wrap">
-                <i class="fab fa-twitter"></i>
+                <i className="fab fa-twitter"></i>
               </div>
               <div className="icon-wrap">
-                <i class="fa-brands fa-instagram"></i>
+                <i className="fa-brands fa-instagram"></i>
               </div>
               <div className="icon-wrap">
-                <i class="fa-brands fa-linkedin-in"></i>
+                <i className="fa-brands fa-linkedin-in"></i>
               </div>
             </div>
           </div>

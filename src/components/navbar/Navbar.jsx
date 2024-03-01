@@ -31,7 +31,7 @@ export const Navbar = () => {
             </a>
           </li>
           <li className="close">
-            <i class="fas fa-times"></i>
+            <i className="fas fa-times"></i>
           </li>
           <li>
             <a href="/">Home</a>
@@ -58,12 +58,11 @@ export const Navbar = () => {
         open={open}
         key={placement}
         height={235}
-        headerStyle={{ display: "none" }}
-        x
+        styles={{ header: { display: "none" } }}
       >
         <DrawerWrapper>
           <li className="closeDrawer" onClick={onClose}>
-            <i class="fas fa-times"></i>
+            <i className="fas fa-times"></i>
           </li>
           <li>
             <a href="/">Home</a>

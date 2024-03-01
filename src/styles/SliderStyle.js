@@ -14,7 +14,6 @@ export const SliderStyle = styled.div`
     border-radius: 30px;
     margin: 0 auto;
     display: flex;
-    background-color: #fd0ea0;
     align-items: center;
     padding: 48px;
     gap: 20px;

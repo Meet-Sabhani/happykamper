@@ -28,47 +28,26 @@ export const Adventure = () => {
     autoplaySpeed: 2000,
     cssEase: "linear",
     ltr: true,
-
   };
   return (
     <AdventureStyle>
       <div className="firstSliderWrap">
         <Slider {...settings}>
-          <div className="slider-item">
-            <img src={s1} alt="" />
-          </div>
-          <div className="slider-item">
-            <img src={s2} alt="" />
-          </div>
-          <div className="slider-item">
-            <img src={s3} alt="" />
-          </div>
-          <div className="slider-item">
-            <img src={s4} alt="" />
-          </div>
-          <div className="slider-item">
-            <img src={s5} alt="" />
-          </div>
+          <img src={s1} alt="" />
+          <img src={s2} alt="" />
+          <img src={s3} alt="" />
+          <img src={s4} alt="" />
+          <img src={s5} alt="" />
         </Slider>
       </div>
 
       <div className="secondSliderWrap">
         <Slider {...settings1}>
-          <div style={{ margin: "0 30px" }}>
-            <img src={s1} alt="" />
-          </div>
-          <div style={{ margin: "0 30px" }}>
-            <img src={s2} alt="" />
-          </div>
-          <div style={{ margin: "0 30px" }}>
-            <img src={s3} alt="" />
-          </div>
-          <div style={{ margin: "0 30px" }}>
-            <img src={s4} alt="" />
-          </div>
-          <div style={{ margin: "0 30px" }}>
-            <img src={s5} alt="" />
-          </div>
+          <img src={s1} alt="" />
+          <img src={s2} alt="" />
+          <img src={s3} alt="" />
+          <img src={s4} alt="" />
+          <img src={s5} alt="" />
         </Slider>
       </div>
 

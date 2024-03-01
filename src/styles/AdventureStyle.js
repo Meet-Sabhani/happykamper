@@ -7,7 +7,7 @@ export const AdventureStyle = styled.div`
   max-width: 1800px;
   margin: 2rem auto 8rem;
   .slider-item {
-    margin: 0 30px; /* Adjust the margin value as needed */
+    margin: 0 30px;
   }
 
   .slick-slide > div {

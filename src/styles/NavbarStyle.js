@@ -51,11 +51,6 @@ export const NavbarStyle = styled.div`
     }
   }
 
-  /* .ant-drawer-body {
-    padding: 0;
-    background: #000;
-  } */
-
   .nav-right {
     display: flex;
     align-items: center;

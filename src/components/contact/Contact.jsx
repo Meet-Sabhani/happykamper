@@ -15,7 +15,7 @@ export const Contact = () => {
   };
 
   const prefixSelector = (
-    <Form.Item name="prefix" noStyle>
+    <Form.Item name="prefix">
       <Select
         defaultValue={"+91"}
         style={{
@@ -55,26 +55,42 @@ export const Contact = () => {
               autoComplete="off"
             >
               <Form.Item label="Name" name="Name">
-                <Input placeholder="Enter Your Full Name" />
+                <Input
+                  placeholder="Enter Your Full Name"
+                  rootClassName="inputStyle"
+                />
               </Form.Item>
 
               <Form.Item name="phone" label="Phone Number">
                 <div className="PhoneNum">
+                  <Form.Item noStyle={true}>
+                    <Select defaultValue={"+91"} rootClassName="phoneSelect">
+                      <Option value="+91">+91</Option>
+                      <Option value="+63">+63</Option>
+                    </Select>
+                  </Form.Item>
                   <Input
-                    addonBefore={prefixSelector}
-                    placeholder="87687687687"
+                    placeholder="Enter your phone number"
                     style={{
                       width: "100%",
                     }}
+                    rootClassName="phoneI"
                   />
                 </div>
               </Form.Item>
 
               <Form.Item name="email" label="Email Address">
-                <Input placeholder="Examplw@gmail.com" />
+                <Input
+                  placeholder="Examplw@gmail.com"
+                  rootClassName="inputStyle"
+                />
               </Form.Item>
-              <Form.Item name="select" label="How can we help?">
-                <Select placeholder="Select Option" style={{ border: "unset" }}>
+
+              <Form.Item
+                name="select"
+                label="How can we help?"
+              >
+                <Select placeholder="Select Topic" rootClassName="selectOption">
                   <Option value="english">Business already Climed</Option>
                   <Option value="Gujarati">Login issue</Option>
                   <Option value="Gujarati">Class Registration</Option>
@@ -82,7 +98,11 @@ export const Contact = () => {
               </Form.Item>
 
               <Form.Item label="Tell us more">
-                <TextArea rows={2} placeholder="Describe more Detail" />
+                <TextArea
+                  rows={2}
+                  placeholder="Describe more Detail"
+                  rootClassName="inputStyle"
+                />
               </Form.Item>
 
               <Form.Item>

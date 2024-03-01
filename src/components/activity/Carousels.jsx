@@ -19,11 +19,11 @@ export const Carousels = () => {
     <>
       <Slider {...settings}>
         {slides.map((slide, index) => (
-          <SliderStyle
-            key={index}
-            style={{ backgroundColor: slide.backgroundColor }}
-          >
-            <div className="slider-dPink">
+          <SliderStyle key={index}>
+            <div
+              className="slider-dPink"
+              style={{ backgroundColor: slide.backgroundColor }}
+            >
               <div className="slider-left">
                 {slide.images.map((image, imgIndex) => (
                   <img key={imgIndex} src={image} alt="" />

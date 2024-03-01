@@ -30,21 +30,74 @@ export const ContactStyle = styled.div`
     padding: 40px 48px;
     border-radius: 15px;
     border: 1px solid #e4e4e7;
-    .ant-form-item-label {
-      label {
-        font-size: 18px;
-      }
-    }
-    .ant-input {
-      padding: 10px 12px;
+
+    .PhoneNum {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       border-radius: 8px;
       border: 1px solid rgb(228, 228, 231);
       background: rgb(253, 253, 253);
       box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 3px 0px;
-      &::placeholder {
-        color: #8b8b8b;
+      padding: 6px 8px;
+
+      .phoneSelect {
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2px 8px;
+      }
+
+      .phoneI {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        margin-left: 10px;
+        &::placeholder {
+          color: #8b8b8b;
+          font-size: 14px;
+          font-weight: 500;
+        }
       }
     }
+
+    .inputStyle {
+      border-radius: 8px;
+      border: 1px solid rgb(228, 228, 231);
+      background: rgb(253, 253, 253);
+      box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 3px 0px;
+      padding: 6px 8px;
+      &::placeholder {
+        color: #8b8b8b;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+
+    .selectOption {
+      border-radius: 8px;
+      border: 1px solid rgb(228, 228, 231);
+      background: rgb(253, 253, 253);
+      box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 3px 0px;
+      .ant-select-selector {
+        &:hover {
+          border-color: rgb(228, 228, 231);
+        }
+
+        .ant-select-selection-item {
+          font-size: 20px;
+          line-height: 28px;
+          font-weight: 500;
+        }
+      }
+      .ant-select-selector {
+        font-size: 18px;
+        font-weight: bold;
+        color: #5e5e5e;
+      }
+    }
+
     .ant-btn {
       background-color: #1a2c68;
       font-weight: bold;
@@ -101,5 +154,12 @@ export const ContactStyle = styled.div`
     .Contact-right {
       padding: 20px;
     }
+  }
+
+  .testcl {
+    border-radius: 8px;
+    border: 1px solid rgb(228, 228, 231);
+    /* background: rgb(253, 253, 253);
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 3px 0px; */
   }
 `;

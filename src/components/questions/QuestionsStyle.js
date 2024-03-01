@@ -27,18 +27,26 @@ export const QuestionsStyle = styled.div`
     flex-direction: column;
     padding: 20px 0;
 
-    :where(.css-dev-only-do-not-override-1xg9z9n).ant-collapse
-      > .ant-collapse-item:last-child,
-    :where(.css-dev-only-do-not-override-1xg9z9n).ant-collapse
-      > .ant-collapse-item:last-child
-      > .ant-collapse-header {
-      border-radius: 8px;
+    .collapse {
       background-color: #fff;
-      span {
-        font-weight: 500;
+      font-size: 20px;
+      line-height: 28px;
+      font-weight: 600;
+
+      .ant-collapse-content-box {
+        padding: 0;
+      }
+      .ant-collapse-content {
+        border-top: unset;
+        padding: 0px 20px 20px 37px;
+      }
+      p {
+        font-size: 16px;
         color: rgb(26, 26, 26);
-        font-size: 20px;
-        line-height: 28px;
+        line-height: 20px;
+        padding: 0;
+        font-weight: 400;
+        text-align: left;
       }
     }
   }
