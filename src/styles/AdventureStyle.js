@@ -68,12 +68,19 @@ export const AdventureStyle = styled.div`
     }
   }
   @media (max-width: 992px) {
+    img {
+      min-width: 264px;
+      width: 264px;
+      min-height: 224px;
+      height: 224px;
+      border-radius: 12px;
+    }
     .adventureBox {
       gap: 15px;
       width: 90%;
     }
   }
-  @media (max-width: 668px) {
+  @media (max-width: 768px) {
     img {
       min-width: 164px;
       width: 164px;

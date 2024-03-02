@@ -19,6 +19,29 @@ export const Adventure = () => {
     autoplaySpeed: 2000,
     cssEase: "linear",
     rtl: true,
+    responsive: [
+      {
+        breakpoint: 1254,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+    ],
   };
   var settings1 = {
     infinite: true,
@@ -29,6 +52,29 @@ export const Adventure = () => {
     autoplaySpeed: 2000,
     cssEase: "linear",
     ltr: true,
+    responsive: [
+      {
+        breakpoint: 1254,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+    ],
   };
   return (
     <AdventureStyle>

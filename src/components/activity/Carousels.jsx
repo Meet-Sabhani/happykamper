@@ -8,7 +8,6 @@ import { Carousel } from "antd";
 
 export const Carousels = () => {
   var settings = {
-    dots: true,
     infinite: true,
     speed: 500,
     autoplaySpeed: 2000,

@@ -29,12 +29,18 @@ export const QuestionsStyle = styled.div`
 
     .collapse {
       background-color: #fff;
-      font-size: 20px;
-      line-height: 28px;
-      font-weight: 600;
+
+      .ant-collapse-header {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 600;
+      }
 
       .ant-collapse-content-box {
-        padding: 0px 20px 20px 37px;
+        padding: 0px 20px 20px 43px;
       }
       .ant-collapse-content {
         border-top: hidden;

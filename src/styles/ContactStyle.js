@@ -76,35 +76,37 @@ export const ContactStyle = styled.div`
     }
 
     .selectOption {
-      .ant-select-selector:hover {
-        outline: 0 !important;
-        border: 1px solid !important;
-      }
-
-      :where(.css-dev-only-do-not-override-1xg9z9n).ant-select-outlined:not(
-          .ant-select-disabled
-        ):not(.ant-select-customize-input):not(
-          .ant-pagination-size-changer
-        ):hover
-        .ant-select-selector {
-        border-color: rgb(228, 228, 231);
-      }
-
+      font-size: 14px;
       .ant-select-selector {
         border-radius: 8px;
         border: 1px solid rgb(228, 228, 231);
         background: rgb(253, 253, 253);
         box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 3px 0px;
-        .ant-select-selection-item {
-          font-size: 20px;
-          line-height: 28px;
-          font-weight: 500;
-        }
-      }
-      .ant-select-selector {
         font-size: 18px;
         font-weight: bold;
         color: #5e5e5e;
+
+        &:hover,
+        &:focus {
+          outline: 0 !important;
+          border: 1px solid rgb(228, 228, 231) !important;
+        }
+
+        &:focus {
+          box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 3px 0px !important;
+        }
+      }
+
+      .ant-select-selection-item {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 500;
+      }
+
+      &:hover .ant-select-selector,
+      &:focus .ant-select-selector {
+        border-color: rgb(228, 228, 231) !important;
+        box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 3px 0px !important;
       }
     }
 
@@ -115,7 +117,7 @@ export const ContactStyle = styled.div`
       font-size: 20px;
       width: 100%;
       height: unset;
-      transition: all.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
 
       &:hover {
         background-color: #304177;

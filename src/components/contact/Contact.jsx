@@ -14,20 +14,6 @@ export const Contact = () => {
     console.log("Failed:", errorInfo);
   };
 
-  const prefixSelector = (
-    <Form.Item name="prefix">
-      <Select
-        defaultValue={"+91"}
-        style={{
-          width: 70,
-        }}
-      >
-        <Option value="+91">+91</Option>
-        <Option value="+63">+63</Option>
-      </Select>
-    </Form.Item>
-  );
-
   return (
     <ContactStyle id="contact">
       <Row>
@@ -86,14 +72,15 @@ export const Contact = () => {
                 />
               </Form.Item>
 
-              <Form.Item
-                name="select"
-                label="How can we help?"
-              >
-                <Select placeholder="Select Topic" rootClassName="selectOption">
+              <Form.Item name="select" label="How can we help?">
+                <Select
+                  placeholder="Select Topic"
+                  rootClassName="selectOption"
+                  allowClear
+                >
                   <Option value="english">Business already Climed</Option>
-                  <Option value="Gujarati">Login issue</Option>
-                  <Option value="Gujarati">Class Registration</Option>
+                  <Option value="Login">Login issue</Option>
+                  <Option value="Class">Class Registration</Option>
                 </Select>
               </Form.Item>
 
