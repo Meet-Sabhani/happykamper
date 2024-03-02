@@ -34,9 +34,16 @@ export const ActivityStyle = styled.div`
       border-bottom: 4px solid #eee;
     }
   }
-  @media (max-width: 667px) {
+  @media (max-width: 1024px) {
     .activity-parents {
       width: 100%;
+      padding: 30px 80px;
+    }
+  }
+  @media (max-width: 667px) {
+    .activity-parents {
+      padding: 20px;
+
       .parent,
       .provider {
         padding: unset;
