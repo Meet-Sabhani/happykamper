@@ -43,10 +43,17 @@ export const ContactStyle = styled.div`
 
       .phoneSelect {
         width: auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 2px 8px;
+        height: 24px;
+        border-radius: 8px;
+        border: 1px solid rgb(228, 228, 231);
+        background: rgb(253, 253, 253);
+        box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 3px 0px;
+        .ant-select-arrow {
+          display: none;
+        }
+        .ant-select-selection-item {
+          padding-inline-end: 8px;
+        }
       }
 
       .phoneI {
@@ -67,7 +74,7 @@ export const ContactStyle = styled.div`
       border: 1px solid rgb(228, 228, 231);
       background: rgb(253, 253, 253);
       box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 3px 0px;
-      padding: 6px 8px;
+      padding: 10px 12px;
       &::placeholder {
         color: #8b8b8b;
         font-size: 14px;
@@ -75,39 +82,18 @@ export const ContactStyle = styled.div`
       }
     }
 
+    .ant-select-selector {
+      border: none;
+      box-shadow: none !important;
+      font-size: 18px;
+      border-radius: 8px;
+    }
+
     .selectOption {
-      font-size: 14px;
-      .ant-select-selector {
-        border-radius: 8px;
-        border: 1px solid rgb(228, 228, 231);
-        background: rgb(253, 253, 253);
-        box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 3px 0px;
-        font-size: 18px;
-        font-weight: bold;
-        color: #5e5e5e;
-
-        &:hover,
-        &:focus {
-          outline: 0 !important;
-          border: 1px solid rgb(228, 228, 231) !important;
-        }
-
-        &:focus {
-          box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 3px 0px !important;
-        }
-      }
-
-      .ant-select-selection-item {
-        font-size: 20px;
-        line-height: 28px;
-        font-weight: 500;
-      }
-
-      &:hover .ant-select-selector,
-      &:focus .ant-select-selector {
-        border-color: rgb(228, 228, 231) !important;
-        box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 3px 0px !important;
-      }
+      border: 1px solid rgb(228, 228, 231);
+      border-radius: 8px;
+      background: rgb(253, 253, 253);
+      box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 3px 0px;
     }
 
     .ant-btn {
@@ -132,7 +118,6 @@ export const ContactStyle = styled.div`
     padding: 48px 20px;
     border-radius: unset;
     .Contact-right {
-      /* border: none; */
       border-radius: 0 0 15px 15px;
       padding: 20px;
       border-top: none;
@@ -156,7 +141,6 @@ export const ContactStyle = styled.div`
 
     .Contact-left {
       align-items: center;
-
       h1 {
         text-align: center;
         font-size: 30px;
@@ -166,12 +150,5 @@ export const ContactStyle = styled.div`
     .Contact-right {
       padding: 20px;
     }
-  }
-
-  .testcl {
-    border-radius: 8px;
-    border: 1px solid rgb(228, 228, 231);
-    /* background: rgb(253, 253, 253);
-    box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 3px 0px; */
   }
 `;

@@ -13,7 +13,7 @@ export const DownloadNow = () => {
       font-size: 22px;
       border: none;
     }
-    @media (max-width: 992px) {
+    @media (max-width: 1024px) {
       button {
         padding: 10px 14px;
         font-size: 18px;
