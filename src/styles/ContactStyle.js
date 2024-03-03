@@ -52,7 +52,7 @@ export const ContactStyle = styled.div`
           display: none;
         }
         .ant-select-selection-item {
-          padding-inline-end: 8px;
+          padding-inline-end: 11px;
         }
       }
 
@@ -85,7 +85,6 @@ export const ContactStyle = styled.div`
     .ant-select-selector {
       border: none;
       box-shadow: none !important;
-      font-size: 18px;
       border-radius: 8px;
     }
 
