@@ -1,9 +1,9 @@
 import React from "react";
 import Header from "../../images/logo.svg";
-import { FooterStyle } from "../../styles/FooterStyle";
 import { Divider, Space } from "antd";
 import gPay from "../../images/googleplay.webp";
 import apple from "../../images/applestore.webp";
+import { FooterStyle } from "./FooterStyle";
 
 export const Footers = () => {
   return (

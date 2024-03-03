@@ -1,6 +1,6 @@
 import React from "react";
 import layerLogo from "../../images/layesr-logo.webp";
-import { BannerStyle } from "../../styles/BannerStyle";
+import { BannerStyle } from "./BannerStyle";
 
 export const BannerLayers = () => {
   return (

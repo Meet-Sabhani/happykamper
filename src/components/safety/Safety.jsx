@@ -1,9 +1,9 @@
 import React from "react";
 import iPhone13 from "../../images/iPhone 13.webp";
 import shild from "../../images/shieldd2.webp";
-import { SafetyStyle } from "../../styles/SafetyStyle";
 import { DownloadNow } from "../download/DownloadNow";
 import { Proffional } from "./proffional";
+import { SafetyStyle } from "./SafetyStyle";
 
 export const Safety = () => {
   return (

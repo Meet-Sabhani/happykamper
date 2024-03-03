@@ -2,7 +2,7 @@ import React from "react";
 import { Button, Col, Flex, Form, Input, Row, Select, Space } from "antd";
 import { Option } from "antd/es/mentions";
 import contactImg from "../../images/contect.webp";
-import { ContactStyle } from "../../styles/ContactStyle";
+import { ContactStyle } from "./ContactStyle";
 
 const { TextArea } = Input;
 

@@ -1,6 +1,6 @@
 import React from "react";
-import { ActivityStyle } from "../../styles/ActivityStyle";
 import { Carousels } from "./Carousels";
+import { ActivityStyle } from "./ActivityStyle";
 
 export const Activity = () => {
   return (

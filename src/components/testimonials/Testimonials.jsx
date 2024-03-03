@@ -1,7 +1,7 @@
 import React from "react";
 import avtar from "../../images/Avatar.webp";
-import { TestimonialsStyle } from "../../styles/TestimonialsStyle";
 import { DownloadNow } from "../download/DownloadNow";
+import { TestimonialsStyle } from "./TestimonialsStyle";
 
 export const Testimonials = () => {
   const avatars = [];

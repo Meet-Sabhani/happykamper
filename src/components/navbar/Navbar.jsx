@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { NavbarStyle } from "../../styles/NavbarStyle";
 import logoImg from "../../images/HeaderLogo.webp";
 import LogoRes from "../../images/LogoRes.webp";
 import { Drawer, Select } from "antd";
 import { Option } from "antd/es/mentions";
 import styled from "styled-components";
+import { NavbarStyle } from "./NavbarStyle";
 
 export const Navbar = () => {
   const [open, setOpen] = useState(false);

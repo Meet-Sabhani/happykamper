@@ -4,10 +4,10 @@ import s2 from "../../images/S2.svg";
 import s3 from "../../images/S3.webp";
 import s4 from "../../images/S4.webp";
 import s5 from "../../images/S5.svg";
-import { AdventureStyle } from "../../styles/AdventureStyle";
 import { DownloadNow } from "../download/DownloadNow";
 import Slider from "react-slick";
 import { Carousel } from "antd";
+import { AdventureStyle } from "./AdventureStyle";
 
 export const Adventure = () => {
   var settings = {

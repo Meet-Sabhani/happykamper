@@ -9,7 +9,7 @@ import Playlands from "../../images/Cooking.svg";
 import Education from "../../images/Education.svg";
 import Outdoor from "../../images/Outdoor.svg";
 import Family from "../../images/Family.svg";
-import { DiscoverStyle } from "../../styles/DiscoverStyle";
+import { DiscoverStyle } from "./DiscoverStyle";
 
 export const Discover = () => {
   return (

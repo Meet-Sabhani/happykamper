@@ -10,9 +10,8 @@ import mobile6 from "../../images/mobile6.webp";
 import mobile7 from "../../images/mobile7.webp";
 import appStore from "../../images/applestore.webp";
 import playStore from "../../images/googleplay.webp";
-import { MobileStyle } from "../../styles/MobileStyle";
-
-import { HomeStyle } from "../../styles/HomeStyle";
+import { HomeStyle } from "./HomeStyle";
+import { MobileStyle } from "./MobileStyle";
 
 export const Home = () => {
   return (

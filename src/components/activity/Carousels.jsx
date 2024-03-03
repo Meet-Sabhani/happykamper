@@ -1,10 +1,10 @@
 import React from "react";
-import { SliderStyle } from "../../styles/SliderStyle";
 import { DownloadNow } from "../download/DownloadNow";
 import logo from "../../images/LogoWhite.webp";
 import { slides } from "./slidesArray";
 import Slider from "react-slick";
 import { Carousel } from "antd";
+import { SliderStyle } from "./SliderStyle";
 
 export const Carousels = () => {
   var settings = {
