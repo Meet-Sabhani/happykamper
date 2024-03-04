@@ -30,6 +30,8 @@ export const NavbarStyle = styled.div`
 
         &:nth-child(1) {
           margin-right: 24px;
+          padding: unset;
+
           img {
             object-fit: contain;
             width: 25px;
@@ -68,7 +70,7 @@ export const NavbarStyle = styled.div`
         font-weight: bold;
       }
     }
-   
+
     a {
       border: none;
       padding: 10px 20px;

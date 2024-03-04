@@ -97,6 +97,9 @@ export const ContactStyle = styled.div`
       background: rgb(253, 253, 253);
       box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 3px 0px;
     }
+    .ant-select .ant-select-arrow {
+      color: #8b8b8b !important;
+    }
 
     .ant-btn {
       background-color: #1a2c68;
