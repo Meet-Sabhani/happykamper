@@ -50,9 +50,14 @@ export const Contact = () => {
               <Form.Item name="phone" label="Phone Number">
                 <div className="PhoneNum">
                   <Form.Item noStyle={true}>
-                    <Select defaultValue={"+91"} rootClassName="phoneSelect">
+                    <Select
+                      defaultValue={"+91"}
+                      dropdownMatchSelectWidth={false}
+                      rootClassName="phoneSelect"
+                    >
                       <Option value="+91">+91</Option>
                       <Option value="+63">+63</Option>
+                      <Option value="+83">+83</Option>
                     </Select>
                   </Form.Item>
                   <Input

@@ -43,16 +43,19 @@ export const ContactStyle = styled.div`
 
       .phoneSelect {
         width: auto;
-        height: 24px;
         border-radius: 8px;
         border: 1px solid rgb(228, 228, 231);
         background: rgb(253, 253, 253);
         box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 3px 0px;
+
         .ant-select-arrow {
           display: none;
         }
+        .ant-select-selector {
+          height: auto;
+        }
         .ant-select-selection-item {
-          padding-inline-end: 11px;
+          padding-inline-end: 0;
         }
       }
 

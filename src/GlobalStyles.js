@@ -17,4 +17,15 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     max-width: 1600px;
     margin: 0 auto;
 }
+.ant-select .ant-select-arrow {
+      transition: all 0.5s ease 0s;
+      color: #001829;
+      width: 28;
+    height: 28;
+    fill: none;
+    }
+    .ant-select.ant-select-open .ant-select-arrow {
+      transform: rotate(-180deg);
+      transition: all 0.5s ease 0s;
+    }
 `;

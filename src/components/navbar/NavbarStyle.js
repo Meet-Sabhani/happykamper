@@ -17,29 +17,29 @@ export const NavbarStyle = styled.div`
 
   .nav-left {
     display: flex;
-    gap: 24px;
 
     ul {
       display: flex;
       align-items: center;
-      gap: 20px;
 
       li {
         list-style: none;
+        padding: 7px 12px;
+        font-size: 20px;
+        font-weight: 500;
 
         &:nth-child(1) {
-          height: 40px;
           margin-right: 24px;
           img {
-            object-fit: cover;
-            height: 100%;
+            object-fit: contain;
+            width: 25px;
+            height: 36px;
           }
         }
 
         a {
           text-decoration: none;
-          font-size: 20px;
-          font-weight: 500;
+
           color: #5e5e5e;
           transition: 0.5s;
 
@@ -58,18 +58,17 @@ export const NavbarStyle = styled.div`
 
     .ant-select-selector {
       border: unset;
+      font-size: 20px;
+      font-weight: bold;
+      color: #5e5e5e;
+
       .ant-select-selection-item {
         font-size: 20px;
         line-height: 28px;
         font-weight: bold;
       }
     }
-    .ant-select-selector {
-      font-size: 18px;
-      font-weight: bold;
-      color: #5e5e5e;
-    }
-
+   
     a {
       border: none;
       padding: 10px 20px;
@@ -112,7 +111,6 @@ export const NavbarStyle = styled.div`
     .ant-drawer {
       .ant-drawer-body {
         ul {
-          gap: 10px;
           position: relative;
           display: flex;
           flex-direction: column;
