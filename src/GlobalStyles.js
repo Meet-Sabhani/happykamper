@@ -20,9 +20,12 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 .ant-select .ant-select-arrow {
       transition: all 0.5s ease 0s;
       color: #001829;
-      width: 28;
-    height: 28;
-    fill: none;
+      font-size: 18px;
+      font-weight: bold;
+   
+    svg{
+     stroke-width: 100;
+   }
     }
     .ant-select.ant-select-open .ant-select-arrow {
       transform: rotate(-180deg);

@@ -62,13 +62,16 @@ export const NavbarStyle = styled.div`
       border: unset;
       font-size: 20px;
       font-weight: bold;
-      color: #5e5e5e;
+      color: rgba(26, 26, 26, 0.7);
 
       .ant-select-selection-item {
         font-size: 20px;
         line-height: 28px;
         font-weight: bold;
       }
+    }
+    .ant-select.ant-select-open .ant-select-selection-item {
+      color: rgba(26, 26, 26, 0.7);
     }
 
     a {
