@@ -5,6 +5,7 @@ import { Drawer, Select } from "antd";
 import { Option } from "antd/es/mentions";
 import styled from "styled-components";
 import { NavbarStyle } from "./NavbarStyle";
+import { DownOutlined } from "@ant-design/icons";
 
 export const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -85,12 +86,13 @@ export const Navbar = () => {
         <Select
           defaultValue={"english"}
           style={{ border: "unset", zIndex: 99 }}
+          suffixIcon={<DownOutlined />}
         >
           <Option value="english">English</Option>
           <Option value="Gujarati">Gujarati</Option>
         </Select>
 
-        <a href="#">Download App</a>
+        <a href="/">Download App</a>
         <div className="menu" onClick={showDrawer}>
           <div className="menu-line"></div>
           <div className="menu-line"></div>
